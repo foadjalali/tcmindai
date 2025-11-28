@@ -1,0 +1,323 @@
+{
+  "en": [
+    {
+      "category": "AI & Data Solutions",
+      "items": [
+        {
+          "q": "What kinds of AI models do you deploy (LLMs, CV, NLP)?",
+          "a": "We primarily deploy LLMs (chat, RAG, summarization), NLP pipelines (NER, sentiment), and computer vision models (classification, detection, OCR). We select models based on accuracy, latency, and your compute budget."
+        },
+        {
+          "q": "Can you build a custom RAG over our private data?",
+          "a": "Yes. We design retrieval pipelines (chunking, embeddings, vector stores), apply access controls, and add evaluation harnesses to measure answer quality, hallucination rate, and latency before production."
+        },
+        {
+          "q": "How do you prevent hallucinations?",
+          "a": "We use constrained prompting, retrieval validation, citation requirements, and output filters. For critical tasks, we add rule-based guards, human-in-the-loop, and model ensembles."
+        },
+        {
+          "q": "Do you support on-prem or air-gapped deployments?",
+          "a": "Yes. We can containerize the full AI stack (vector DB, model server, API) to run on your Kubernetes/OpenStack, with no external network calls if required."
+        }
+      ]
+    },
+    {
+      "category": "Software Development",
+      "items": [
+        {
+          "q": "Which stacks do you use for backend and frontend?",
+          "a": "Backends: Laravel, Django/FastAPI, Node/Express. Frontends: Next.js 15/React with Tailwind and shadcn/ui. We choose per project constraints, team skills, and performance targets."
+        },
+        {
+          "q": "How do you handle multi-language (i18n) websites?",
+          "a": "We typically use locale routing (e.g., /en, /ar, /tr), JSON dictionaries, and SSR for SEO. Content is stored structured so copy can be updated without redeploys."
+        },
+        {
+          "q": "What is your testing approach?",
+          "a": "We add unit, integration, and E2E tests, plus contract tests for APIs. For AI features, we add dataset-based evals, golden answers, and regression checks."
+        },
+        {
+          "q": "Can you integrate payment and subscription systems?",
+          "a": "Yes. We support Stripe and similar providers, with secure webhooks, invoicing, and role-based access for plans and entitlements."
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure & DevOps",
+      "items": [
+        {
+          "q": "Do you provide CI/CD and containerization?",
+          "a": "Yes. We use Docker, multi-stage builds, and pipelines (GitLab/GitHub). We also set up review apps, artifact registries, and automated security scans."
+        },
+        {
+          "q": "Can you deploy on Kubernetes or OpenStack?",
+          "a": "Absolutely. We provision namespaces, Ingress, HPA, secrets, and monitoring. On OpenStack we handle flavors, volumes, floating IPs, and networks."
+        },
+        {
+          "q": "How do you handle observability?",
+          "a": "We provide centralized logs, metrics, and traces (e.g., Loki/Prometheus/Tempo or OpenTelemetry), with dashboards and alerting tied to SLIs/SLOs."
+        },
+        {
+          "q": "What about scalability and cost control?",
+          "a": "We design stateless services, cache hot paths, use autoscaling, and set budgets/alerts. We review instance sizing and storage tiers regularly."
+        }
+      ]
+    },
+    {
+      "category": "Security & Compliance",
+      "items": [
+        {
+          "q": "How is data protected at rest and in transit?",
+          "a": "We enforce TLS, rotate keys, and use KMS for at-rest encryption. Sensitive configs live in secret managers with least-privilege access."
+        },
+        {
+          "q": "Do you support RBAC and audit logs?",
+          "a": "Yes. We implement role-based access with fine-grained permissions and maintain structured audit trails for critical operations."
+        },
+        {
+          "q": "How do you handle privacy for AI features?",
+          "a": "We isolate tenant data, redact PII before indexing, and can run models locally. We also add privacy evaluations and data retention policies."
+        },
+        {
+          "q": "Are you compliant with GDPR or similar?",
+          "a": "We follow data-minimization, purpose limitation, DSR workflows (export/delete), and store processing records to aid compliance."
+        }
+      ]
+    },
+    {
+      "category": "Pricing, Support & SLAs",
+      "items": [
+        {
+          "q": "How is pricing structured?",
+          "a": "We offer fixed-scope packages and monthly retainers. AI workloads may include model inference or GPU costs, estimated upfront."
+        },
+        {
+          "q": "Do you provide SLAs?",
+          "a": "Yes. We can define response times, uptime targets, and escalation paths aligned with your business criticality."
+        },
+        {
+          "q": "What support options are available?",
+          "a": "Email/Ticket as standard; dedicated Slack/Telegram channels and on-call options are available in higher tiers."
+        },
+        {
+          "q": "Can you provide training for our team?",
+          "a": "We run handover sessions, documentation, and workshops for developers, data teams, and operations."
+        }
+      ]
+    }
+  ],
+  "ar": [
+    {
+      "category": "حلول الذكاء الاصطناعي والبيانات",
+      "items": [
+        {
+          "q": "ما أنواع النماذج التي تقومون بنشرها؟",
+          "a": "نستخدم أساساً نماذج LLM (محادثة، RAG، تلخيص)، وخطوط NLP (استخراج الكيانات، المشاعر)، ورؤية حاسوبية (تصنيف، كشف، OCR) وفقاً للدقة والزمن والميزانية."
+        },
+        {
+          "q": "هل تبنون RAG مخصصاً لبياناتنا الخاصة؟",
+          "a": "نعم، نصمّم الاسترجاع (تقطيع، تضمين، مخازن متجهية) مع ضوابط وصول وتقييمات للجودة ومعدل الهلوسة والزمن قبل الإنتاج."
+        },
+        {
+          "q": "كيف تقللون الهلوسة؟",
+          "a": "باستخدام توجيهات مقيّدة، والتحقق من الاسترجاع، وإجبار المخرجات على الاستشهاد، إضافةً إلى مرشحات وHuman-in-the-loop عند الحاجة."
+        },
+        {
+          "q": "هل تدعمون النشر داخل المؤسسة أو بيئات معزولة؟",
+          "a": "نعم، نُحزِّم المكدس كاملاً (قاعدة متجهات، خادم النماذج، API) للتشغيل على Kubernetes/OpenStack بدون اتصالات خارجية عند الطلب."
+        }
+      ]
+    },
+    {
+      "category": "تطوير البرمجيات",
+      "items": [
+        {
+          "q": "ما التقنيات المستخدمة في الواجهة الخلفية والأمامية؟",
+          "a": "خلفية: Laravel وDjango/FastAPI وNode. أمامية: Next.js 15/React مع Tailwind وshadcn/ui، حسب متطلبات المشروع والأداء."
+        },
+        {
+          "q": "كيف تديرون مواقع متعددة اللغات؟",
+          "a": "نستخدم مسارات محلية (/en, /ar, /tr)، وقواميس JSON، وSSR لتحسين SEO. المحتوى منظم لتحديثه دون إعادة نشر."
+        },
+        {
+          "q": "ما نهج الاختبارات لديكم؟",
+          "a": "نضيف وحدات وتكامل وE2E، ومع ميزات الذكاء نضيف تقييمات قائمة على البيانات وإجابات مرجعية وفحوصات انحدار."
+        },
+        {
+          "q": "هل يمكن دمج المدفوعات والاشتراكات؟",
+          "a": "نعم، ندعم Stripe وما شابه مع Webhooks آمنة وفوترة وصلاحيات مبنية على الأدوار."
+        }
+      ]
+    },
+    {
+      "category": "البنية التحتية وDevOps",
+      "items": [
+        {
+          "q": "هل توفّرون CI/CD وحاويات؟",
+          "a": "نعم، Docker وبُنى متعددة المراحل وأنابيب GitLab/GitHub، مع مراجعات، ومستودعات حِزم، وفحوصات أمان."
+        },
+        {
+          "q": "هل تنشرون على Kubernetes أو OpenStack؟",
+          "a": "بالتأكيد. نجهّز Namespaces وIngress وHPA وأسراراً ومراقبة. وعلى OpenStack ندير Flavors وVolumes وFloating IPs والشبكات."
+        },
+        {
+          "q": "كيف تتعاملون مع الرصد والملاحظة؟",
+          "a": "سجلات ومقاييس وتتبع مركزي (Loki/Prometheus/Tempo أو OpenTelemetry) مع لوحات وتنبيهات مبنية على SLI/SLO."
+        },
+        {
+          "q": "وماذا عن التوسعية وضبط التكلفة؟",
+          "a": "نصمّم خدمات عديمة الحالة، ونخزّن المسارات الساخنة، ونفعّل مقياساً تلقائياً، ونضبط ميزانيات وتنبيهات."
+        }
+      ]
+    },
+    {
+      "category": "الأمان والامتثال",
+      "items": [
+        {
+          "q": "كيف تُحمى البيانات أثناء النقل والتخزين؟",
+          "a": "TLS مع تدوير مفاتيح واستخدام KMS لتشفير السكون. الإعدادات الحساسة في Secret Manager بصلاحيات أدنى."
+        },
+        {
+          "q": "هل تدعمون RBAC وسجلات تدقيق؟",
+          "a": "نعم، أذونات دقيقة حسب الأدوار مع سجلات تدقيق للعمليات الحساسة."
+        },
+        {
+          "q": "كيف تُدار الخصوصية في ميزات الذكاء؟",
+          "a": "نعزل بيانات كل عميل، ونحجب PII قبل الفهرسة، ويمكن تشغيل النماذج محلياً. نوفر تقييمات خصوصية وسياسات احتفاظ."
+        },
+        {
+          "q": "هل تلتزمون بـ GDPR؟",
+          "a": "نتبع تقليل البيانات وتحديد الغرض ومسارات طلبات أصحاب البيانات وحفظ سجلات المعالجة للمساعدة في الامتثال."
+        }
+      ]
+    },
+    {
+      "category": "التسعير والدعم واتفاقيات SLA",
+      "items": [
+        {
+          "q": "كيف يتم تسعير الخدمات؟",
+          "a": "حزم ذات نطاق ثابت أو اشتراك شهري. تكاليف استدلال النماذج أو GPU تُقدَّر مسبقاً."
+        },
+        {
+          "q": "هل لديكم اتفاقيات مستوى خدمة؟",
+          "a": "نعم، نحدد أزمنة الاستجابة وأهداف التوافر ومسارات التصعيد حسب حساسية أعمالكم."
+        },
+        {
+          "q": "ما خيارات الدعم؟",
+          "a": "بريد/تذاكر افتراضياً؛ قنوات مخصصة على Slack/Telegram ودعم On-call في الخطط الأعلى."
+        },
+        {
+          "q": "هل توفّرون تدريباً لفريقنا؟",
+          "a": "نقدّم جلسات انتقال ومعرفة ووِرشاً للمطورين وفرق البيانات والعمليات."
+        }
+      ]
+    }
+  ],
+  "tr": [
+    {
+      "category": "Yapay Zekâ ve Veri Çözümleri",
+      "items": [
+        {
+          "q": "Hangi tür AI modellerini devreye alıyorsunuz?",
+          "a": "Ağırlıklı olarak LLM'ler (sohbet, RAG, özetleme), NLP hatları (varlık çıkarımı, duygu analizi) ve bilgisayarlı görü (sınıflandırma, tespit, OCR) kullanıyoruz."
+        },
+        {
+          "q": "Özel verimiz üzerinde özel RAG kurabilir misiniz?",
+          "a": "Evet. Parçalama, embedding, vektör veritabanı, erişim kontrolü ve kalite/halüsinasyon/süre ölçümü için değerlendirme düzenekleri kuruyoruz."
+        },
+        {
+          "q": "Halüsinasyonları nasıl azaltıyorsunuz?",
+          "a": "Kısıtlı istemler, alıntı zorunluluğu, doğrulama ve çıktı filtreleri kullanıyoruz. Kritik durumlarda kural tabanlı korumalar ve insan onayı ekliyoruz."
+        },
+        {
+          "q": "Şirket içi veya izole dağıtımları destekliyor musunuz?",
+          "a": "Evet. Tam AI yığınını konteynerize edip Kubernetes/OpenStack üzerinde dış ağa çıkmadan çalıştırabiliriz."
+        }
+      ]
+    },
+    {
+      "category": "Yazılım Geliştirme",
+      "items": [
+        {
+          "q": "Hangi backend/frontend yığınlarını kullanıyorsunuz?",
+          "a": "Backend: Laravel, Django/FastAPI, Node. Frontend: Next.js 15/React, Tailwind ve shadcn/ui. Proje hedeflerine göre seçiyoruz."
+        },
+        {
+          "q": "Çok dilli siteleri nasıl yönetiyorsunuz?",
+          "a": "Yerel yönlendirme (/en, /ar, /tr), JSON sözlükler ve SEO için SSR kullanıyoruz. İçerik yapısal tutulur, yeniden dağıtımsız güncellenir."
+        },
+        {
+          "q": "Test yaklaşımınız nedir?",
+          "a": "Birim, entegrasyon ve E2E; AI için veri seti tabanlı değerlendirmeler ve regresyon kontrolleri ekliyoruz."
+        },
+        {
+          "q": "Ödeme ve abonelik entegrasyonu yapıyor musunuz?",
+          "a": "Evet, Stripe vb. ile güvenli webhook'lar, faturalama ve rol bazlı yetkilendirme sağlıyoruz."
+        }
+      ]
+    },
+    {
+      "category": "Altyapı ve DevOps",
+      "items": [
+        {
+          "q": "CI/CD ve konteynerleştirme sağlıyor musunuz?",
+          "a": "Evet. Docker çok aşamalı imajlar ve GitLab/GitHub boru hatları; inceleme ortamları ve güvenlik taramaları ile."
+        },
+        {
+          "q": "Kubernetes veya OpenStack üzerinde dağıtım yapar mısınız?",
+          "a": "Elbette. Namespace, Ingress, HPA, gizli anahtarlar ve izleme; OpenStack'te flavor, volume, floating IP ve ağ yönetimi."
+        },
+        {
+          "q": "Gözlemlenebilirliği nasıl kuruyorsunuz?",
+          "a": "Merkezi log, metrik ve iz (OpenTelemetry veya Loki/Prometheus/Tempo) ile panolar ve uyarılar (SLI/SLO)."
+        },
+        {
+          "q": "Ölçeklenebilirlik ve maliyet kontrolü?",
+          "a": "Durumsuz servisler, sıcak yollar için önbellek, otomatik ölçekleme ve düzenli kaynak/maliyet incelemeleri."
+        }
+      ]
+    },
+    {
+      "category": "Güvenlik ve Uyumluluk",
+      "items": [
+        {
+          "q": "Veri aktarım ve depolamada nasıl korunuyor?",
+          "a": "TLS, anahtar döndürme, KMS ile bekleme halinde şifreleme; gizli yapılandırmalar giz yönetiminde, en az ayrıcalıkla."
+        },
+        {
+          "q": "RBAC ve denetim kayıtları var mı?",
+          "a": "Evet, ince taneli yetkiler ve kritik işlemler için denetim izleri sağlıyoruz."
+        },
+        {
+          "q": "AI gizliliğini nasıl yönetiyorsunuz?",
+          "a": "Kiracı izolasyonu, PII redaksiyonu, yerel model çalıştırma; ayrıca gizlilik değerlendirmeleri ve saklama politikaları."
+        },
+        {
+          "q": "GDPR benzeri düzenlemelere uyum?",
+          "a": "Veri minimizasyonu, amaç sınırlaması, DSR süreçleri ve işleme kayıtları tutuyoruz."
+        }
+      ]
+    },
+    {
+      "category": "Fiyatlandırma, Destek ve SLA",
+      "items": [
+        {
+          "q": "Fiyatlandırma nasıl işliyor?",
+          "a": "Sabit kapsamlı paketler veya aylık bakım. AI iş yükleri için çıkarım/GPU maliyetleri önceden tahmin edilir."
+        },
+        {
+          "q": "SLA sunuyor musunuz?",
+          "a": "Evet, yanıt süreleri, çalışma süresi hedefleri ve eskalasyon yollarını iş kritikliğinize göre tanımlarız."
+        },
+        {
+          "q": "Hangi destek kanalları mevcut?",
+          "a": "Varsayılan e-posta/bilet; üst planlarda özel Slack/Telegram kanalları ve nöbetçi destek."
+        },
+        {
+          "q": "Ekibimize eğitim verebilir misiniz?",
+          "a": "Geliştirici, veri ve operasyon ekipleri için devir, dokümantasyon ve atölye çalışmaları sağlıyoruz."
+        }
+      ]
+    }
+  ]
+}

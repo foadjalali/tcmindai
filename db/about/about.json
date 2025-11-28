@@ -1,0 +1,64 @@
+{
+  "en": {
+    "heroEyebrow": "About TechnomindAI",
+    "heroTitle": "Empowering enterprises through intelligent, secure, and scalable AI systems",
+    "heroSubtitle": "We help businesses transition from traditional software to data-driven, AI-powered ecosystems. From design to deployment, TechnomindAI builds platforms that deliver measurable impact and long-term scalability.",
+
+    "missionTitle": "Our Mission",
+    "missionBody": "To design and deploy AI-driven systems that turn complex data into actionable intelligence. Our mission is to empower organizations with secure, privacy-aware, and efficient digital infrastructure that accelerates innovation and business growth.",
+
+    "visionTitle": "Our Vision",
+    "visionBody": "To be a global leader in usable and trustworthy AI , creating intelligent ecosystems that bridge people, data, and technology for a smarter and more connected future.",
+
+    "valuesTitle": "Our Values",
+    "valuesBody": "Integrity, usability, and impact are at the heart of everything we build. We believe that technology should be human-centered, transparent, and focused on real outcomes.",
+    "valuesList": [
+      { "title": "Integrity & Security", "desc": "Every line of code and system we build respects privacy, compliance, and data protection." },
+      { "title": "Innovation with Purpose", "desc": "We build practical AI that solves real business challenges , not just prototypes." },
+      { "title": "Transparency & Trust", "desc": "We maintain full visibility across every project stage , from ideation to deployment." },
+      { "title": "Collaboration", "desc": "We work closely with clients as partners, aligning technical solutions with their long-term goals." }
+    ]
+  },
+
+  "ar": {
+    "heroEyebrow": "حول TechnomindAI",
+    "heroTitle": "تمكين المؤسسات من خلال أنظمة ذكاء اصطناعي آمنة وقابلة للتوسع",
+    "heroSubtitle": "نساعد الشركات على التحول من البرمجيات التقليدية إلى منظومات مدفوعة بالبيانات والذكاء الاصطناعي. من التصميم إلى التنفيذ، تبني TechnomindAI منصات تُحدث أثراً ملموساً وتوسّعاً طويل الأمد.",
+
+    "missionTitle": "مهمتنا",
+    "missionBody": "تصميم ونشر أنظمة قائمة على الذكاء الاصطناعي تحول البيانات المعقدة إلى رؤى قابلة للتنفيذ. مهمتنا هي تمكين المؤسسات ببنية رقمية آمنة وفعالة تراعي الخصوصية وتسّرع الابتكار والنمو.",
+
+    "visionTitle": "رؤيتنا",
+    "visionBody": "أن نكون روّاداً عالمياً في الذكاء الاصطناعي القابل للاستخدام والثقة , نبني منظومات ذكية تربط بين الأشخاص والبيانات والتقنية لمستقبل أكثر ذكاءً وترابطاً.",
+
+    "valuesTitle": "قيمنا",
+    "valuesBody": "النزاهة وسهولة الاستخدام والتأثير هي جوهر كل ما نبنيه. نؤمن أن التقنية يجب أن تكون إنسانية وشفافة وتركّز على النتائج الفعلية.",
+    "valuesList": [
+      { "title": "النزاهة والأمان", "desc": "كل كود ونظام نبنيه يحترم الخصوصية والامتثال وحماية البيانات." },
+      { "title": "الابتكار الهادف", "desc": "نبتكر ذكاءً اصطناعياً عملياً يحل التحديات الواقعية وليس مجرّد نماذج تجريبية." },
+      { "title": "الشفافية والثقة", "desc": "نحافظ على رؤية واضحة في كل مراحل المشروع من الفكرة إلى الإطلاق." },
+      { "title": "التعاون", "desc": "نعمل مع عملائنا كشركاء لتحقيق أهدافهم بعيدة المدى." }
+    ]
+  },
+
+  "tr": {
+    "heroEyebrow": "TechnomindAI Hakkında",
+    "heroTitle": "Akıllı, güvenli ve ölçeklenebilir AI sistemleriyle işletmeleri güçlendiriyoruz",
+    "heroSubtitle": "Şirketlerin geleneksel yazılımdan veri odaklı, AI destekli ekosistemlere geçmesine yardımcı oluyoruz. Tasarımdan dağıtıma kadar TechnomindAI, ölçülebilir etki ve uzun vadeli ölçeklenebilirlik sağlayan platformlar inşa eder.",
+
+    "missionTitle": "Misyonumuz",
+    "missionBody": "Karmaşık verileri eyleme dönüştürülebilir zekaya çeviren AI tabanlı sistemler tasarlamak ve dağıtmak. Misyonumuz, kuruluşları güvenli, gizlilik odaklı ve verimli dijital altyapı ile güçlendirmektir.",
+
+    "visionTitle": "Vizyonumuz",
+    "visionBody": "Kullanılabilir ve güvenilir AI konusunda küresel bir lider olmak , insanları, veriyi ve teknolojiyi birbirine bağlayan akıllı ekosistemler kurmak.",
+
+    "valuesTitle": "Değerlerimiz",
+    "valuesBody": "Dürüstlük, kullanılabilirlik ve etki, inşa ettiğimiz her şeyin merkezindedir. Teknolojinin insan merkezli, şeffaf ve sonuç odaklı olması gerektiğine inanıyoruz.",
+    "valuesList": [
+      { "title": "Dürüstlük ve Güvenlik", "desc": "Her kod satırı ve sistem, gizlilik, uyumluluk ve veri korumasına saygı gösterir." },
+      { "title": "Amaca Yönelik Yenilik", "desc": "Gerçek iş zorluklarını çözen pratik AI çözümleri geliştiriyoruz." },
+      { "title": "Şeffaflık ve Güven", "desc": "Fikirden dağıtıma kadar her aşamada tam görünürlük sağlıyoruz." },
+      { "title": "İşbirliği", "desc": "Uzun vadeli hedeflerle uyumlu teknik çözümler üretmek için müşterilerimizle ortak çalışıyoruz." }
+    ]
+  }
+}

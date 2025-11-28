@@ -1,0 +1,169 @@
+{
+  "home": {
+    "en": {
+      "title": "TechnomindAI | AI Driven Technology and Infrastructure Solutions",
+      "description": "TechnomindAI delivers advanced AI solutions for businesses combining intelligent systems, scalable infrastructure, and modern software engineering to accelerate digital growth",
+      "keywords": "AI solutions, technology infrastructure, AI software development, machine learning systems, cloud infrastructure, business automation, data intelligence",
+      "canonical": "https://technomindai.com/en",
+      "image": "/og/home.jpg"
+    },
+    "ar": {
+      "title": "TechnomindAI | حلول تقنية وذكاء اصطناعي متقدمة",
+      "description": "توفر TechnomindAI حلول ذكاء اصطناعي متطورة للمؤسسات تجمع بين الأنظمة الذكية والبنية التحتية القابلة للتوسع والهندسة البرمجية الحديثة لتسريع التحول الرقمي",
+      "keywords": "حلول الذكاء الاصطناعي, البنية التحتية التقنية, تعلم الآلة, البرمجيات الذكية, التحول الرقمي, تحليل البيانات",
+      "canonical": "https://technomindai.com/ar",
+      "image": "/og/home.jpg"
+    },
+    "tr": {
+      "title": "TechnomindAI | Yapay Zekâ ve Teknoloji Altyapı Çözümleri",
+      "description": "TechnomindAI işletmeler için gelişmiş yapay zekâ çözümleri sunar akıllı sistemleri, ölçeklenebilir altyapıyı ve modern yazılım mühendisliğini birleştirerek dijital büyümeyi hızlandırır",
+      "keywords": "yapay zekâ çözümleri, teknoloji altyapısı, makine öğrenimi, bulut sistemleri, veri zekâsı, dijital dönüşüm",
+      "canonical": "https://technomindai.com/tr",
+      "image": "/og/home.jpg"
+    }
+  },
+
+  "about": {
+    "en": {
+      "title": "About TechnomindAI | Mission Vision and Values",
+      "description": "Learn about TechnomindAI mission and vision as a technology company building AI powered systems infrastructure and secure enterprise software for the future",
+      "keywords": "AI company, technology innovation, mission and vision, software engineering, AI infrastructure, intelligent systems",
+      "canonical": "https://technomindai.com/en/about",
+      "image": "/og/about.jpg"
+    },
+    "ar": {
+      "title": "حول TechnomindAI | الرسالة والرؤية والقيم",
+      "description": "تعرّف على رسالة ورؤية TechnomindAI كشركة تقنية تطوّر أنظمة مدعومة بالذكاء الاصطناعي وبنية تحتية ذكية وبرمجيات مؤسسية آمنة للمستقبل",
+      "keywords": "شركة تقنية, الذكاء الاصطناعي, الابتكار, البنية التحتية الذكية, البرمجيات المؤسسية, أنظمة ذكية",
+      "canonical": "https://technomindai.com/ar/about",
+      "image": "/og/about.jpg"
+    },
+    "tr": {
+      "title": "TechnomindAI Hakkında | Misyon Vizyon ve Değerler",
+      "description": "TechnomindAI'nin misyonu ve vizyonu hakkında bilgi edinin şirket yapay zekâ destekli sistemler, güvenli yazılımlar ve akıllı altyapılar geliştirerek geleceğin teknolojisini inşa ediyor",
+      "keywords": "AI şirketi, teknoloji inovasyonu, misyon, vizyon, akıllı sistemler, yazılım mühendisliği",
+      "canonical": "https://technomindai.com/tr/about",
+      "image": "/og/about.jpg"
+    }
+  },
+
+  "blog": {
+    "en": {
+      "title": "TechnomindAI Blog | Insights and Engineering Perspectives",
+      "description": "Read the latest articles from TechnomindAI on AI development software engineering and infrastructure trends transforming the digital landscape",
+      "keywords": "AI blog, software engineering, infrastructure, machine learning, technology trends, AI research",
+      "canonical": "https://technomindai.com/en/blog",
+      "image": "/og/blog.jpg"
+    },
+    "ar": {
+      "title": "مدونة TechnomindAI | تحليلات وهندسة البرمجيات",
+      "description": "اقرأ أحدث المقالات من TechnomindAI حول تطوير الذكاء الاصطناعي وهندسة البرمجيات والاتجاهات التقنية التي تغيّر مشهد التحول الرقمي",
+      "keywords": "مدونة الذكاء الاصطناعي, هندسة البرمجيات, تعلم الآلة, التحول الرقمي, البنية التحتية التقنية",
+      "canonical": "https://technomindai.com/ar/blog",
+      "image": "/og/blog.jpg"
+    },
+    "tr": {
+      "title": "TechnomindAI Blog | Yapay Zekâ ve Teknoloji Analizleri",
+      "description": "TechnomindAI'den yapay zekâ geliştirme yazılım mühendisliği ve dijital altyapı trendleri üzerine en yeni makaleleri okuyun",
+      "keywords": "AI blog, yazılım mühendisliği, altyapı, yapay zekâ, teknoloji trendleri, makine öğrenimi",
+      "canonical": "https://technomindai.com/tr/blog",
+      "image": "/og/blog.jpg"
+    }
+  },
+
+  "career": {
+    "en": {
+      "title": "TechnomindAI Careers | Join Our Innovation Team",
+      "description": "Explore open roles at TechnomindAI where engineers creators and researchers collaborate to build reliable AI software and infrastructure for global enterprises",
+      "keywords": "AI careers, technology jobs, software engineering roles, AI research positions, DevOps, innovation culture",
+      "canonical": "https://technomindai.com/en/career",
+      "image": "/og/career.jpg"
+    },
+    "ar": {
+      "title": "الوظائف في TechnomindAI | انضم إلى فريق الابتكار",
+      "description": "استكشف الوظائف المتاحة في TechnomindAI حيث يعمل المهندسون والمبدعون والباحثون معًا لبناء برمجيات وبنى تحتية موثوقة تعتمد على الذكاء الاصطناعي",
+      "keywords": "وظائف تقنية, مهندسو البرمجيات, الذكاء الاصطناعي, البحث والابتكار, وظائف DevOps",
+      "canonical": "https://technomindai.com/ar/career",
+      "image": "/og/career.jpg"
+    },
+    "tr": {
+      "title": "TechnomindAI Kariyer | Yenilik Ekibimize Katılın",
+      "description": "TechnomindAI'deki açık pozisyonları keşfedin mühendisler yaratıcılar ve araştırmacılar güvenilir yapay zekâ yazılımları ve altyapıları oluşturmak için birlikte çalışıyor",
+      "keywords": "AI kariyer, teknoloji işleri, yazılım mühendisliği, araştırma, DevOps, inovasyon kültürü",
+      "canonical": "https://technomindai.com/tr/career",
+      "image": "/og/career.jpg"
+    }
+  },
+
+  "contact": {
+    "en": {
+      "title": "Contact TechnomindAI | Get in Touch with Our Team",
+      "description": "Reach out to TechnomindAI to discuss your next AI project or technology collaboration we are here to help you scale your digital transformation",
+      "keywords": "contact AI company, technology consulting, AI collaboration, enterprise software, business inquiries",
+      "canonical": "https://technomindai.com/en/contact",
+      "image": "/og/contact.jpg"
+    },
+    "ar": {
+      "title": "اتصل بـ TechnomindAI | تواصل مع فريقنا",
+      "description": "تواصل مع TechnomindAI لمناقشة مشروعك القادم في الذكاء الاصطناعي أو التعاون التقني نحن هنا لمساعدتك في تطوير التحول الرقمي الخاص بك",
+      "keywords": "الاتصال, شركة الذكاء الاصطناعي, الاستشارات التقنية, التعاون التقني, التحول الرقمي",
+      "canonical": "https://technomindai.com/ar/contact",
+      "image": "/og/contact.jpg"
+    },
+    "tr": {
+      "title": "TechnomindAI ile İletişim | Ekibimizle Bağlantı Kurun",
+      "description": "Bir sonraki yapay zekâ projenizi veya teknoloji işbirliğinizi konuşmak için TechnomindAI ile iletişime geçin dijital dönüşümünüzü ölçeklendirmenize yardımcı olabiliriz",
+      "keywords": "iletişim, AI şirketi, teknoloji danışmanlığı, işbirliği, dijital dönüşüm",
+      "canonical": "https://technomindai.com/tr/contact",
+      "image": "/og/contact.jpg"
+    }
+  },
+
+  "faq": {
+    "en": {
+      "title": "TechnomindAI FAQ | Answers About Our Services and Platforms",
+      "description": "Find answers to common questions about TechnomindAI AI services platform capabilities and technology stack for enterprise innovation",
+      "keywords": "AI FAQ, TechnomindAI help, AI services, machine learning platforms, data infrastructure",
+      "canonical": "https://technomindai.com/en/faq",
+      "image": "/og/faq.jpg"
+    },
+    "ar": {
+      "title": "الأسئلة الشائعة | TechnomindAI",
+      "description": "اعثر على إجابات للأسئلة الشائعة حول خدمات TechnomindAI وأنظمتها ومنصاتها التقنية المبتكرة للمؤسسات",
+      "keywords": "الأسئلة الشائعة, خدمات الذكاء الاصطناعي, المنصات التقنية, البنية التحتية للبيانات",
+      "canonical": "https://technomindai.com/ar/faq",
+      "image": "/og/faq.jpg"
+    },
+    "tr": {
+      "title": "TechnomindAI SSS | Hizmetlerimiz Hakkında Sık Sorulan Sorular",
+      "description": "TechnomindAI'nin yapay zekâ hizmetleri platform yetenekleri ve kurumsal teknoloji çözümleri hakkında sık sorulan soruların cevaplarını bulun",
+      "keywords": "AI SSS, yapay zekâ hizmetleri, platformlar, veri altyapısı, teknoloji çözümleri",
+      "canonical": "https://technomindai.com/tr/faq",
+      "image": "/og/faq.jpg"
+    }
+  },
+
+  "solution": {
+    "en": {
+      "title": "TechnomindAI Solutions | AI Software and Infrastructure for Business Growth",
+      "description": "Explore TechnomindAI solutions covering AI software systems data platforms and scalable infrastructure designed for enterprise performance and innovation",
+      "keywords": "AI software, data platforms, infrastructure solutions, business innovation, enterprise AI, digital systems",
+      "canonical": "https://technomindai.com/en/solution",
+      "image": "/og/solution.jpg"
+    },
+    "ar": {
+      "title": "حلول TechnomindAI | برمجيات وبنية تحتية ذكية للأعمال",
+      "description": "استكشف حلول TechnomindAI التي تغطي البرمجيات القائمة على الذكاء الاصطناعي ومنصات البيانات والبنى التحتية القابلة للتوسع المصممة للأداء المؤسسي والابتكار",
+      "keywords": "حلول الذكاء الاصطناعي, منصات البيانات, البنية التحتية, الابتكار المؤسسي, الأنظمة الرقمية",
+      "canonical": "https://technomindai.com/ar/solution",
+      "image": "/og/solution.jpg"
+    },
+    "tr": {
+      "title": "TechnomindAI Çözümleri | İş Büyümesi İçin AI Yazılımları ve Altyapılar",
+      "description": "AI yazılım sistemlerini, veri platformlarını ve kurumsal yenilik için ölçeklenebilir altyapıları kapsayan TechnomindAI çözümlerini keşfedin",
+      "keywords": "AI yazılımı, veri platformları, altyapı çözümleri, kurumsal yenilik, dijital sistemler",
+      "canonical": "https://technomindai.com/tr/solution",
+      "image": "/og/solution.jpg"
+    }
+  }
+}

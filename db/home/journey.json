@@ -1,0 +1,38 @@
+{
+  "en": {
+    "title": "From Discovery to Delivery",
+    "subtitle": "From concept exploration to final deployment, we manage every step of your digital journey.",
+    "steps": [
+      { "title": "Discovery", "description": "Workshops, domain deep-dive" },
+      { "title": "Requirements", "description": "SRS, user stories, acceptance" },
+      { "title": "Architecture", "description": "System design, tech choices" },
+      { "title": "Build", "description": "APIs, services, UI, data" },
+      { "title": "QA", "description": "Automation, performance, security" },
+      { "title": "Delivery & Launch", "description": "Handover, docs, rollout" }
+    ]
+  },
+  "ar": {
+    "title": "من الاكتشاف إلى التسليم",
+    "subtitle": "من استكشاف المفهوم إلى الإطلاق النهائي، ندير كل خطوة في رحلتك الرقمية.",
+    "steps": [
+      { "title": "التحليل والاكتشاف", "description": "ورش عمل ودراسة متعمقة للمجال" },
+      { "title": "المتطلبات", "description": "تحليل SRS وقصص المستخدم" },
+      { "title": "الهندسة المعمارية", "description": "تصميم النظام واختيار التقنيات" },
+      { "title": "البناء", "description": "تطوير الواجهات والخدمات والبيانات" },
+      { "title": "الاختبار", "description": "الأداء، الأمان، الاختبار الآلي" },
+      { "title": "التسليم والإطلاق", "description": "التسليم النهائي والتوثيق والنشر" }
+    ]
+  },
+  "tr": {
+    "title": "Keşiften Teslime",
+    "subtitle": "Kavramsal keşiften nihai dağıtıma kadar dijital yolculuğun her adımını yönetiyoruz.",
+    "steps": [
+      { "title": "Keşif", "description": "Atölyeler ve alan analizi" },
+      { "title": "Gereksinimler", "description": "SRS, kullanıcı hikayeleri" },
+      { "title": "Mimari", "description": "Sistem tasarımı, teknoloji seçimi" },
+      { "title": "Geliştirme", "description": "API'ler, hizmetler, arayüz, veri" },
+      { "title": "Test", "description": "Otomasyon, performans, güvenlik" },
+      { "title": "Teslimat ve Lansman", "description": "Teslim, belgeler, yayınlama" }
+    ]
+  }
+}

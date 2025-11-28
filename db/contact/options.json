@@ -1,0 +1,20 @@
+{
+  "en": {
+    "subjects": ["AI Consulting", "Custom Software", "Infrastructure & DevOps", "Security & Compliance"],
+    "projectTypes": ["AI Assistant / RAG", "Data Platform", "Web App", "Mobile App", "API Integration", "MLOps / CI-CD"],
+    "budgets": ["< $5k", "$5k–$15k", "$15k–$40k", "$40k–$100k", "$100k+"],
+    "contactMethods": ["Email", "Phone", "Telegram", "WhatsApp"]
+  },
+  "ar": {
+    "subjects": ["استشارات الذكاء الاصطناعي", "برمجيات مخصصة", "البنية التحتية وDevOps", "الأمان والامتثال"],
+    "projectTypes": ["مساعد ذكاء/RAG", "منصة بيانات", "تطبيق ويب", "تطبيق جوال", "تكامل API", "MLOps / CI-CD"],
+    "budgets": ["< 5 آلاف$", "5–15 آلاف$", "15–40 ألف$", "40–100 ألف$", "100 ألف$+"],
+    "contactMethods": ["البريد الإلكتروني", "الهاتف", "تيليجرام", "واتساب"]
+  },
+  "tr": {
+    "subjects": ["AI Danışmanlığı", "Özel Yazılım", "Altyapı & DevOps", "Güvenlik & Uyum"],
+    "projectTypes": ["AI Asistan / RAG", "Veri Platformu", "Web Uygulaması", "Mobil Uygulama", "API Entegrasyonu", "MLOps / CI-CD"],
+    "budgets": ["< $5k", "$5k–$15k", "$15k–$40k", "$40k–$100k", "$100k+"],
+    "contactMethods": ["E-posta", "Telefon", "Telegram", "WhatsApp"]
+  }
+}

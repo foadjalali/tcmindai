@@ -1,0 +1,56 @@
+{
+  "en": [
+    {
+      "id": "senior-ml-engineer",
+      "title": "Senior ML Engineer (NLP/RAG)",
+      "short": "Own end-to-end ML pipelines, from data to deployment. Focus on NLP, RAG, evaluation, and MLOps.",
+      "tags": ["Full-time", "Remote", "AI/NLP", "MLOps"],
+      "email": "careers@company.com",
+      "description": "Responsibilities:\n• Design and deploy NLP pipelines (RAG, vector search, evaluation)\n• Build scalable training/inference on cloud\n• Partner with product and backend teams\n\nRequirements:\n• 4+ years in ML (NLP preferred)\n• Experience with PyTorch/TF, LangChain, vector DBs\n• Solid MLOps (Docker, CI/CD, monitoring)\n\nNice to have:\n• LLM fine-tuning, evaluation frameworks, prompt engineering"
+    },
+    {
+      "id": "senior-backend-engineer",
+      "title": "Senior Backend Engineer (Go/Laravel)",
+      "short": "Ship robust APIs, high-throughput services, and clean architecture for AI & platform features.",
+      "tags": ["Full-time", "Hybrid", "Backend", "Microservices"],
+      "email": "careers@company.com",
+      "description": "Responsibilities:\n• Design/implement APIs and microservices (Go/Laravel)\n• Integrate queues, caching, observability\n• Own performance, reliability, and security\n\nRequirements:\n• 5+ years backend (Go or PHP/Laravel)\n• RDBMS/NoSQL, Redis, message brokers\n• Docker/K8s, CI/CD\n\nNice to have:\n• gRPC, SSE/WebSockets, event-driven design"
+    }
+  ],
+  "ar": [
+    {
+      "id": "senior-ml-engineer",
+      "title": "مهندس تعلم آلي أول (NLP/RAG)",
+      "short": "قيادة خطوط ML من البيانات إلى الإنتاج مع التركيز على NLP وRAG وMLOps.",
+      "tags": ["دوام كامل", "عن بُعد", "ذكاء اصطناعي/NLP", "MLOps"],
+      "email": "careers@company.com",
+      "description": "المسؤوليات:\n• تصميم ونشر حلول NLP (RAG، بحث متجهي، تقييم)\n• بناء عمليات تدريب/استدلال قابلة للتوسع على السحابة\n• التعاون مع فرق المنتج والخلفية\n\nالمتطلبات:\n• +4 سنوات في ML (يفضل NLP)\n• خبرة PyTorch/TF، LangChain، قواعد بيانات متجهية\n• خبرة MLOps (Docker، CI/CD، المراقبة)\n\nالمفضّل:\n• ضبط LLM، أطر التقييم، هندسة البرامبت"
+    },
+    {
+      "id": "senior-backend-engineer",
+      "title": "مهندس خلفية أول (Go/Laravel)",
+      "short": "بناء واجهات برمجة قوية وخدمات عالية الأداء بهندسة نظيفة.",
+      "tags": ["دوام كامل", "هجين", "Backend", "خدمات مصغّرة"],
+      "email": "careers@company.com",
+      "description": "المسؤوليات:\n• تصميم/تنفيذ واجهات وخدمات مصغّرة (Go/Laravel)\n• تكامل الطوابير والتخزين المؤقت والمراقبة\n• مسؤولية الأداء والموثوقية والأمن\n\nالمتطلبات:\n• +5 سنوات Backend (Go أو PHP/Laravel)\n• قواعد بيانات علائقية/لاعلائقية، Redis، وسطاء رسائل\n• Docker/K8s، CI/CD\n\nالمفضّل:\n• gRPC، SSE/WebSockets، تصميم قائم على الأحداث"
+    }
+  ],
+  "tr": [
+    {
+      "id": "senior-ml-engineer",
+      "title": "Kıdemli ML Mühendisi (NLP/RAG)",
+      "short": "Veriden canlıya uçtan uca ML süreçlerinin sahibi olun. NLP, RAG ve MLOps odaklı.",
+      "tags": ["Tam zamanlı", "Uzaktan", "AI/NLP", "MLOps"],
+      "email": "careers@company.com",
+      "description": "Sorumluluklar:\n• NLP (RAG, vektör arama, değerlendirme) çözümleri tasarla/dağıt\n• Bulutta ölçeklenebilir eğitim/tahmin altyapısı kur\n• Ürün ve backend ekipleriyle çalış\n\nGereksinimler:\n• 4+ yıl ML (tercihen NLP)\n• PyTorch/TF, LangChain, vektör veritabanları\n• MLOps (Docker, CI/CD, izleme)\n\nArtılar:\n• LLM ince ayarı, değerlendirme çerçeveleri, prompt mühendisliği"
+    },
+    {
+      "id": "senior-backend-engineer",
+      "title": "Kıdemli Backend Mühendisi (Go/Laravel)",
+      "short": "AI ve platform özellikleri için sağlam API'ler ve yüksek verimli servisler geliştir.",
+      "tags": ["Tam zamanlı", "Hibrit", "Backend", "Mikroservisler"],
+      "email": "careers@company.com",
+      "description": "Sorumluluklar:\n• API'ler ve mikroservisler tasarla/uygula (Go/Laravel)\n• Kuyruklar, cache ve gözlemlenebilirlik entegrasyonları\n• Performans, güvenilirlik ve güvenliğin sahibi ol\n\nGereksinimler:\n• 5+ yıl backend (Go veya PHP/Laravel)\n• RDBMS/NoSQL, Redis, mesaj broker'ları\n• Docker/K8s, CI/CD\n\nArtılar:\n• gRPC, SSE/WebSockets, olay güdümlü tasarım"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "future-of-digital-transformation",
+    "coverImage": {
+      "src": "/business-innovation-concept.jpg",
+      "alt": {
+        "en": "Abstract digital grid representing the future of business",
+        "ar": "شبكة رقمية تجريدية تمثل مستقبل الأعمال",
+        "tr": "İş dünyasının geleceğini temsil eden soyut dijital ızgara"
+      }
+    },
+    "author": { "name": "Foad Jalali", "avatar": "/blog/authors/Foad-coloured.webp" },
+    "publishedAt": "2025-09-15T09:00:00.000Z",
+    "readingTimeMinutes": 5,
+    "tags": ["technology", "innovation", "strategy"],
+    "translations": {
+      "en": {
+        "title": "The Future of Digital Transformation",
+        "excerpt": "How AI, data platforms, and privacy-first design are reshaping modern organizations.",
+        "description": "In today’s rapidly evolving landscape, digital transformation is no longer a one-off initiative but a continuous capability. Successful organizations combine AI-driven workflows, reliable data platforms, and privacy-first design to deliver measurable outcomes.\n\n## Key themes\n- Model-first thinking with evaluation harnesses\n- Robust data governance and lineage\n- Human-centered flows with fast feedback loops\n\n### What’s next?\nInvest in foundations that compound over time: telemetry, experimentation, and cost-aware architectures that scale with your product."
+      },
+      "ar": {
+        "title": "مستقبل التحول الرقمي",
+        "excerpt": "كيف تعيد تقنيات الذكاء الاصطناعي ومنصات البيانات والتصميم القائم على الخصوصية تشكيل المؤسسات الحديثة.",
+        "description": "في المشهد المتسارع اليوم، لم يعد التحول الرقمي مشروعًا لمرة واحدة، بل قدرة مستمرة. تجمع المؤسسات الناجحة بين مسارات عمل مدعومة بالذكاء الاصطناعي، ومنصات بيانات موثوقة، وتصميم يضع الخصوصية أولًا لتحقيق نتائج ملموسة.\n\n## محاور أساسية\n- تفكير قائم على النماذج مع أطر تقييم واضحة\n- حوكمة بيانات قوية وتتبع للمصدر\n- تدفقات عمل متمحورة حول الإنسان مع دورات تغذية راجعة سريعة\n\n### ما التالي؟\nاستثمر في الأسس التي تتضاعف قيمتها بمرور الوقت: القياسات التشغيلية، والتجارب، وهندسة واعية بالتكلفة قابلة للتوسع مع المنتج."
+      },
+      "tr": {
+        "title": "Dijital Dönüşümün Geleceği",
+        "excerpt": "Yapay zekâ, veri platformları ve gizlilik odaklı tasarım modern kurumları nasıl dönüştürüyor?",
+        "description": "Günümüzün hızla değişen ortamında dijital dönüşüm tek seferlik bir proje değil, sürekli bir yetenektir. Başarılı kurumlar; yapay zekâ destekli iş akışlarını, güvenilir veri platformlarını ve gizlilik öncelikli tasarımı birleştirerek ölçülebilir sonuçlar üretir.\n\n## Ana temalar\n- Değerlendirme düzenekleriyle model-öncelikli yaklaşım\n- Sağlam veri yönetişimi ve köken takibi\n- Hızlı geri bildirim döngüleriyle insan odaklı akışlar\n\n### Sırada ne var?\nZamanla bileşik etki yaratan temellere yatırım yapın: telemetri, deneyler ve ürünle birlikte ölçeklenen maliyet-duyarlı mimariler."
+      }
+    }
+  },
+  {
+    "slug": "building-scalable-business-solutions",
+    "coverImage": {
+      "src": "/blog/digital-transformation-concept.png",
+      "alt": {
+        "en": "Scalable system architecture diagram",
+        "ar": "مخطط معمارية نظام قابل للتوسع",
+        "tr": "Ölçeklenebilir sistem mimarisi diyagramı"
+      }
+    },
+    "author": { "name": "Foad Jalali", "avatar": "/blog/authors/Foad-coloured.webp" },
+    "publishedAt": "2025-08-02T10:30:00.000Z",
+    "readingTimeMinutes": 6,
+    "tags": ["architecture", "platform", "best-practices"],
+    "translations": {
+      "en": {
+        "title": "Building Scalable Business Solutions",
+        "excerpt": "Principles and patterns to grow from MVP to enterprise without constant rewrites.",
+        "description": "Scaling isn’t just about adding servers,it’s about clear boundaries, observability, and lean iteration.\n\n## Principles\n- Modular domains and clean contracts\n- Async processing and idempotent jobs\n- Caching strategies with SLAs\n\n### Implementation notes\nStart with a thin platform layer, instrument early (logs, metrics, tracing), and adopt progressive hardening as usage grows."
+      },
+      "ar": {
+        "title": "بناء حلول أعمال قابلة للتوسع",
+        "excerpt": "مبادئ وأنماط للانتقال من نموذج أولي إلى مستوى المؤسسات دون عمليات إعادة كتابة مستمرة.",
+        "description": "التوسع ليس مجرد إضافة خوادم,بل يتعلق بحدود واضحة، وقابلية الرصد، وتكرار رشيق.\n\n## مبادئ\n- مجالات معيارية وعقود نظيفة\n- معالجة غير متزامنة ومهام عديمة الآثار الجانبية\n- استراتيجيات تخزين مؤقت مع اتفاقيات مستوى الخدمة\n\n### ملاحظات تنفيذية\nابدأ بطبقة منصة نحيفة، وقم بالقياس مبكرًا (سجلات، مؤشرات، تتبع)، واعتمد تقوية تدريجية مع نمو الاستخدام."
+      },
+      "tr": {
+        "title": "Ölçeklenebilir İş Çözümleri Oluşturma",
+        "excerpt": "Sürekli yeniden yazmadan MVP’den kurumsala büyümek için ilkeler ve kalıplar.",
+        "description": "Ölçekleme yalnızca sunucu eklemek değildir,net sınırlar, gözlemlenebilirlik ve yalın iterasyon gerektirir.\n\n## İlkeler\n- Modüler alanlar ve temiz sözleşmeler\n- Asenkron işleme ve idempotent görevler\n- SLA’larla desteklenen önbellekleme stratejileri\n\n### Uygulama notları\nİnce bir platform katmanıyla başlayın, erken enstrümante edin (log, metrik, izleme) ve kullanım arttıkça kademeli sağlamlaştırma uygulayın."
+      }
+    }
+  },
+  {
+    "slug": "emerging-technologies-to-watch",
+    "coverImage": {
+      "src": "/future-technology-cityscape.png",
+      "alt": {
+        "en": "Collage of AI, robotics, and edge devices",
+        "ar": "تركيب بصري للذكاء الاصطناعي والروبوتات وأجهزة الحافة",
+        "tr": "Yapay zekâ, robotik ve uç cihazlardan oluşan kolaj"
+      }
+    },
+    "author": { "name": "Foad Jalali", "avatar": "/blog/authors/Foad-coloured.webp" },
+    "publishedAt": "2025-07-10T08:15:00.000Z",
+    "readingTimeMinutes": 4,
+    "tags": ["ai", "edge", "security"],
+    "translations": {
+      "en": {
+        "title": "Emerging Technologies to Watch",
+        "excerpt": "From on-device AI to secure enclaves,what will shape the next 24 months.",
+        "description": "Tech cycles are compressing. On-device AI, secure enclaves, and privacy-preserving analytics are moving from pilots to production.\n\n## Signals\n- Smaller, faster models on the edge\n- Hardware-software co-design\n- Regulations that reward accountability\n\n### Action\nPrototype where latency matters, and align roadmaps with upcoming compliance standards."
+      },
+      "ar": {
+        "title": "تقنيات ناشئة يجب مراقبتها",
+        "excerpt": "من الذكاء الاصطناعي على الأجهزة إلى البيئات الآمنة,ما الذي سيشكل العامين القادمين.",
+        "description": "تتقارب دورات التقنية بسرعة. ينتقل الذكاء الاصطناعي على الأجهزة والبيئات الآمنة والتحليلات المحافظة على الخصوصية من التجارب إلى الإنتاج.\n\n## مؤشرات\n- نماذج أصغر وأسرع على الحافة\n- تصميم مشترك بين العتاد والبرمجيات\n- تشريعات تكافئ المساءلة\n\n### الإجراء\nاختبر النماذج حيث تكون الكمون مهمًا، ووافق خارطة الطريق مع معايير الامتثال القادمة."
+      },
+      "tr": {
+        "title": "Takip Edilmesi Gereken Yeni Teknolojiler",
+        "excerpt": "Cihaz-üstü yapay zekâdan güvenli alanlara,önümüzdeki 24 ayı şekillendirecek başlıklar.",
+        "description": "Teknoloji döngüleri sıkışıyor. Cihaz-üstü yapay zekâ, güvenli bölgeler ve mahremiyeti koruyan analitikler pilotlardan canlı ortama geçiyor.\n\n## Sinyaller\n- Uçta daha küçük ve hızlı modeller\n- Donanım-yazılım birlikte tasarımı\n- Hesap verebilirliği ödüllendiren düzenlemeler\n\n### Aksiyon\nGecikmenin kritik olduğu yerlerde prototipleyin ve yol haritalarını yaklaşan uyumluluk standartlarıyla hizalayın."
+      }
+    }
+  }
+]

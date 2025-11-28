@@ -1,0 +1,135 @@
+{
+  "en": [
+    {
+      "id": "s1",
+      "reverse": false,
+      "title": "Empowering Intelligent Transformation",
+      "text": "At TechnomindAI, you get scalable, secure AI solutions that deliver measurable improvements in your business results. We help you increase efficiency, cut costs, and speed up decision-making by supporting AI automation, software development, and infrastructure modernization. Our expertise ensures your operations run seamlessly now and prepares your business for continued digital growth.",
+      "button": {
+        "label": "Get Started",
+        "href": "/contact-us"
+      },
+      "image": {
+        "src": "/home/1.webp",
+        "alt": "AI helping business teams"
+      }
+    },
+    {
+      "id": "s2",
+      "reverse": true,
+      "title": "Tailored Solutions for Every Industry",
+      "text": "Every industry faces distinct obstacles, and TechnomindAI tailors solutions to resolve your unique challenges. We partner with fintech, healthcare, logistics, retail, and enterprise clients to deliver results through AI integration, data intelligence, and custom software. You benefit from our technical expertise and strategic insight, achieving strong ROI and resilient long-term operations.",
+      "button": {
+        "label": "Security & Privacy",
+        "href": "/security"
+      },
+      "image": {
+        "src": "/home/2.webp",
+        "alt": "Secure infrastructure illustration"
+      }
+    },
+    {
+      "id": "s3",
+      "reverse": false,
+      "title": "From Vision to Scalable Reality",
+      "text": "Your ideas become scalable products with TechnomindAI, delivering real value to your organization quickly. We use agile development, cloud-native design, and automation for smooth deployment from concept to enterprise. Our collaborative approach delivers scalable performance, robust security, and the innovation your organization needs to succeed in the digital future.",
+      "button": {
+        "label": "See How",
+        "href": "/solutions"
+      },
+      "image": {
+        "src": "/home/3.webp",
+        "alt": "Multilingual support"
+      }
+    }
+  ],
+  "ar": [
+    {
+      "id": "s1",
+      "reverse": false,
+      "title": "تمكين التحول الذكي",
+      "text": "في TechnomindAI، تحصل على حلول ذكاء اصطناعي قابلة للتوسّع وآمنة تقدم تحسينات قابلة للقياس في نتائج عملك. نساعدك على زيادة الكفاءة، خفض التكاليف، وتسريع اتخاذ القرار من خلال دعم أتمتة الذكاء الاصطناعي، تطوير البرمجيات، وتحديث البنية التحتية. خبرتنا تضمن سير عملياتك بسلاسة الآن وتُعِد عملك للنمو الرقمي المستمر.",
+      "button": {
+        "label": "ابدأ الآن",
+        "href": "/contact-us"
+      },
+      "image": {
+        "src": "/home/1.webp",
+        "alt": "الذكاء الاصطناعي يساعد فرق العمل"
+      }
+    },
+    {
+      "id": "s2",
+      "reverse": true,
+      "title": "حلول مخصصة لكل قطاع",
+      "text": "كل صناعة تواجه تحديات فريدة، وTechnomindAI تقدم حلولًا مصممة خصيصًا لمعالجة تحدياتك. نتعاون مع عملاء من مجالات التكنولوجيا المالية والرعاية الصحية والخدمات اللوجستية والتجزئة والمؤسسات الكبرى لتقديم نتائج ملموسة عبر تكامل الذكاء الاصطناعي وتحليل البيانات والبرمجيات المخصصة. تستفيد من خبرتنا التقنية ورؤيتنا الاستراتيجية لتحقيق عائد استثماري قوي وعمليات مستقرة وطويلة الأمد.",
+      "button": {
+        "label": "الأمان والخصوصية",
+        "href": "/security"
+      },
+      "image": {
+        "src": "/home/2.webp",
+        "alt": "رسم توضيحي للبنية التحتية الآمنة"
+      }
+    },
+    {
+      "id": "s3",
+      "reverse": false,
+      "title": "من الرؤية إلى واقع قابل للتوسّع",
+      "text": "أفكارك تصبح منتجات قابلة للتوسّع مع TechnomindAI، مما يقدم قيمة حقيقية لمؤسستك بسرعة. نستخدم التطوير المرن، التصميم السحابي الأصلي، والأتمتة لتحقيق نشر سلس من المفهوم إلى المؤسسة. نهجنا التعاوني يوفر أداءً قابلًا للتوسّع، أمانًا قويًا، والابتكار الذي تحتاجه للنجاح في المستقبل الرقمي.",
+      "button": {
+        "label": "شاهد المزيد",
+        "href": "/solutions"
+      },
+      "image": {
+        "src": "/home/3.webp",
+        "alt": "دعم متعدد اللغات"
+      }
+    }
+  ],
+  
+  "tr": [
+    {
+      "id": "s1",
+      "reverse": false,
+      "title": "Akıllı Dönüşümü Güçlendirmek",
+      "text": "TechnomindAI ile ölçeklenebilir ve güvenli yapay zekâ çözümleri sayesinde iş sonuçlarınızda ölçülebilir iyileştirmeler elde edersiniz. Verimliliği artırmanıza, maliyetleri azaltmanıza ve karar alma sürecinizi hızlandırmanıza yardımcı oluyoruz. Yapay zekâ otomasyonu, yazılım geliştirme ve altyapı modernizasyonu konularında uzmanlığımız sayesinde operasyonlarınız sorunsuz ilerler ve işletmeniz dijital büyümeye hazırlanır.",
+      "button": {
+        "label": "Başla",
+        "href": "/contact-us"
+      },
+      "image": {
+        "src": "/home/1.webp",
+        "alt": "Yapay zekâ iş ekiplerine yardımcı oluyor"
+      }
+    },
+    {
+      "id": "s2",
+      "reverse": true,
+      "title": "Her Sektör İçin Özelleştirilmiş Çözümler",
+      "text": "Her sektör kendine özgü zorluklarla karşılaşır ve TechnomindAI, bu zorlukları çözmek için özel çözümler geliştirir. Fintech, sağlık, lojistik, perakende ve kurumsal müşterilerle çalışıyoruz; yapay zekâ entegrasyonu, veri zekâsı ve özel yazılımlar aracılığıyla somut sonuçlar sağlıyoruz. Teknik uzmanlığımız ve stratejik öngörümüz sayesinde güçlü yatırım getirisi ve uzun vadeli operasyonel dayanıklılık elde edersiniz.",
+      "button": {
+        "label": "Güvenlik ve Gizlilik",
+        "href": "/security"
+      },
+      "image": {
+        "src": "/home/2.webp",
+        "alt": "Güvenli altyapı illüstrasyonu"
+      }
+    },
+    {
+      "id": "s3",
+      "reverse": false,
+      "title": "Vizyon’dan Ölçeklenebilir Gerçeğe",
+      "text": "TechnomindAI ile fikirleriniz kısa sürede işletmenize gerçek değer kazandıran ölçeklenebilir ürünlere dönüşür. Çevik geliştirme, bulut-yerel tasarım ve otomasyon sayesinde fikirden kuruma sorunsuz bir geçiş sağlıyoruz. İş birliğine dayalı yaklaşımımız ölçeklenebilir performans, güçlü güvenlik ve dijital gelecekte başarılı olmanız için gereken yeniliği sunar.",
+      "button": {
+        "label": "Nasıl Çalışıyor",
+        "href": "/solutions"
+      },
+      "image": {
+        "src": "/home/3.webp",
+        "alt": "Çok dilli destek"
+      }
+    }
+  ]
+}

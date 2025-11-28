@@ -1,0 +1,89 @@
+{
+  "en": [
+    {
+      "title": "AI Products & Assistants",
+      "subtitle": "From idea to reliable, user-ready assistants",
+      "image": "/solutions/1.webp",
+      "paragraphs": [
+        "We design and deliver domain-specific copilots and conversational agents that actually ship to production. Our approach starts with a problem discovery sprint, where we identify the highest-value use cases and the data, UX, and safety constraints they require. We then move into iterative prototyping with realistic edge cases, grounded evaluations, and measurable success criteria,so that what looks impressive in demos remains dependable in day-to-day operations. Guardrails, prompt/response policies, and fallback strategies are built-in from the start, ensuring predictable behavior under real-world load.",
+        "Beyond the first release, we focus on maintainability and observability. You get evaluation pipelines that track quality over time, telemetry to understand model behavior in context, and secure deployment patterns for multi-environment rollouts. Whether you need on-prem, VPC-isolated, or hybrid deployments, we implement the right controls for privacy, compliance, and performance. The result is not just an assistant that works,it’s a product that can evolve with your data, your users, and your roadmap."
+      ]
+    },
+    {
+      "title": "Data Platforms & Analytics",
+      "subtitle": "Ingestion, governance, and insight at scale",
+      "image": "/solutions/2.webp",
+      "paragraphs": [
+        "We build durable data foundations that let teams move fast without breaking trust. Starting with ingestion and schema contracts, we normalize and document data flows so that upstream changes don’t cascade into outages. Our transformation layers balance performance with clarity, using well-named entities, lineage, and quality checks that catch issues before they reach decision-makers. Metadata and cataloging ensure analysts and engineers can discover, understand, and safely reuse datasets, reducing duplication and hidden silos.",
+        "From BI dashboards to advanced analytics and model-ready features, we enable a coherent path from raw data to insight. Access controls, tokenization, and row/column-level policies protect sensitive information, while cost governance keeps cloud spending transparent and predictable. We integrate observability across pipelines to surface drift, freshness, and anomaly signals,so that stakeholders can trust the numbers and your team can iterate with confidence."
+      ]
+    },
+    {
+      "title": "Cloud, DevOps & Security",
+      "subtitle": "Hardened infrastructure with CI/CD and compliance",
+      "image": "/solutions/3.webp",
+      "paragraphs": [
+        "We architect cloud-native stacks with repeatable delivery, strong isolation, and first-class observability. Our CI/CD pipelines automate build, test, and deploy with canary and blue-green strategies, while infrastructure-as-code keeps environments reproducible and auditable. Centralized logging, metrics, and tracing provide a shared operational picture, reducing MTTR and enabling proactive capacity planning. We design for zero-downtime and controlled rollbacks, so you can ship changes with minimal risk.",
+        "Security is embedded end-to-end: baseline hardening, secrets management, least-privilege IAM, and continuous posture assessment. We implement network segmentation, WAF and rate-limits, and policy-as-code for consistent compliance across regions. When needed, we support private networking, data residency, and vendor due-diligence to meet regulatory or enterprise requirements. The outcome is an infrastructure that scales with your product and stands up to scrutiny from customers, auditors, and your own SRE team."
+      ]
+    }
+  ],
+  "ar": [
+    {
+      "title": "منتجات ومساعدو الذكاء الاصطناعي",
+      "subtitle": "من الفكرة إلى مساعدين موثوقين وجاهزين للمستخدم",
+      "image": "/solutions/1.webp",
+      "paragraphs": [
+        "نصمّم ونطوّر مساعدين محادثيين و\"كوپايـلِت\" مخصّصين للمجال تُطلق فعلاً إلى بيئات الإنتاج. نبدأ بسبرٍ للاحتياجات لتحديد حالات الاستخدام الأعلى قيمة ومتطلّبات البيانات وتجربة المستخدم ومحددات الأمان. ثم ننتقل إلى النمذجة السريعة المتكررة مع حالات حافة واقعية، وتقييمات مقنّنة، ومؤشرات نجاح قابلة للقياس، لضمان أن ما يبدو مبهراً في العروض يبقى موثوقاً في التشغيل اليومي. ندمج منذ البداية حواجز الحماية وسياسات الإدخال/الإخراج وآليات التراجع لضمان سلوك متوقع تحت الأحمال الحقيقية.",
+        "بعد الإصدار الأول، نُركّز على القابلية للصيانة وقابلية الرصد. نقدّم خطوط تقييم تتابع الجودة مع مرور الوقت، وتليمتري لفهم سلوك النموذج في السياق، وأنماط نشر آمنة لبيئات متعددة. سواءً احتجتَ نشرًا داخليًا، أو ضمن شبكة خاصة افتراضية، أو نموذجًا هجينًا، نطبّق الضوابط المناسبة للخصوصية والامتثال والأداء. النتيجة ليست مجرد مساعد يعمل، بل منتج قادر على التطوّر مع بياناتك ومستخدميك وخارطة طريقك."
+      ]
+    },
+    {
+      "title": "منصات البيانات والتحليلات",
+      "subtitle": "الاِستيعاب والحوكمة والرؤى على نطاق واسع",
+      "image": "/solutions/2.webp",
+      "paragraphs": [
+        "نبني أسس بيانات متينة تمكّن الفرق من التحرك بسرعة دون التضحية بالثقة. نبدأ بالاستيعاب وعقود المخططات لنضمن عدم تحوّل تغييرات المنابع إلى أعطال متسلسلة. توازن طبقات التحويل بين الأداء والوضوح، مع كيانات مُسمّاة جيدًا، وتتبع نسب البيانات، واختبارات جودة تلتقط المشكلات قبل وصولها إلى أصحاب القرار. وتضمن الفهرسة والبيانات الوصفية قدرة المحللين والمهندسين على اكتشاف مجموعات البيانات وفهمها وإعادة استخدامها بأمان، مما يقلّل الازدواجية وجزر البيانات الخفية.",
+        "من لوحات ذكاء الأعمال إلى التحليلات المتقدّمة والسمات الجاهزة للنمذجة، نتيح مسارًا متناغمًا من البيانات الخام إلى الرؤى. تحمي ضوابط الوصول وسياسات الأعمدة والصفوف المعلومات الحساسة، فيما تُبقي حوكمة التكلفة الإنفاق السحابي شفافًا ومتوقَّعًا. ندمج قابلية الرصد عبر خطوط المعالجة لإبراز مؤشّرات الانجراف وحداثة البيانات والشذوذ,ليثق المعنيون بالأرقام ويتمكّن فريقك من التكرار بثقة."
+      ]
+    },
+    {
+      "title": "السحابة وDevOps والأمن",
+      "subtitle": "بنية تحتية مُحصّنة مع CI/CD والامتثال",
+      "image": "/solutions/3.webp",
+      "paragraphs": [
+        "نُصمّم مكدسات سحابية أصلية مع تسليم متكرر، وعزل قوي، وقابلية رصد من الدرجة الأولى. تؤتمت خطوط CI/CD البناء والاختبار والنشر عبر استراتيجيات تدريجية مثل الكَناري والأزرق-الأخضر، فيما يجعل البنية التحتية ككود البيئات قابلة للتكرار والتدقيق. يمنحك التسجيل المركزي والقياسات والتتبّع رؤية تشغيلية مشتركة، ما يقلل زمن استعادة الخدمة ويُمكّن من التخطيط الاستباقي للسعات. نصمّم لانعدام التوقف وخطط تراجع مضبوطة، لتُطلق التغييرات بأقل قدر من المخاطر.",
+        "الأمن مدمج من البداية إلى النهاية: تقوية أساسية، إدارة أسرار، صلاحيات دنيا، وتقييم وضعية مستمر. نطبّق تقسيم الشبكة، وجدران حماية تطبيقات الويب، وحدود المعدّل، وسياسات ككود لضمان امتثال متّسق عبر المناطق. وعند الحاجة، ندعم الشبكات الخاصة وإقامة البيانات ومتطلبات المؤسسات التنظيمية. النتيجة بنية تحتية تتسع مع منتجك وتقف بثبات أمام تدقيق العملاء والمراجعين وفريق SRE لديك."
+      ]
+    }
+  ],
+  "tr": [
+    {
+      "title": "YZ Ürünleri ve Asistanlar",
+      "subtitle": "Fikirden güvenilir, kullanıcıya hazır asistanlara",
+      "image": "/solutions/1.webp",
+      "paragraphs": [
+        "Gerçekten üretime alınan alan-özel copilots ve sohbet asistanları tasarlıyoruz. Süreç, en yüksek değerli kullanım senaryolarını; veri, UX ve güvenlik gereklilikleriyle birlikte netleştirdiğimiz keşif sprintiyle başlar. Ardından gerçekçi edge-case’lerle iteratif prototipleme, ölçülebilir başarı kriterleri ve standartlaştırılmış değerlendirme döngüleri gelir,böylece demoda etkileyici görünen şey, canlı trafikte de kararlı kalır. Guardrail’ler, istek/yanıt politikaları ve geri dönüş stratejileri en baştan kurgulanır.",
+        "İlk sürümden sonra sürdürülebilirliğe ve gözlemlenebilirliğe odaklanıyoruz. Zaman içinde kaliteyi izleyen değerlendirme hatları, bağlam içinde model davranışını görünür kılan telemetri ve çoklu ortam dağıtımları için güvenli kalıplar sunuyoruz. İster on-prem, ister VPC-izole, ister hibrit; gizlilik, uyumluluk ve performans için doğru kontrolleri uygularız. Ortaya sadece çalışan bir asistan değil; veriniz, kullanıcılarınız ve yol haritanızla birlikte evrilebilen bir ürün çıkar."
+      ]
+    },
+    {
+      "title": "Veri Platformları ve Analitik",
+      "subtitle": "Alım, yönetişim ve ölçeklenebilir içgörü",
+      "image": "/solutions/2.webp",
+      "paragraphs": [
+        "Ekiplerin hızla ilerlerken güveni zedelememesini sağlayan sağlam veri temelleri kuruyoruz. Alım ve şema sözleşmeleriyle başlayıp, yukarı akış değişikliklerinin zincirleme kesintilere dönüşmesini önlüyoruz. Dönüşüm katmanlarımız performans ile açıklığı dengeler; iyi adlandırılmış varlıklar, soy kütüğü ve kalite kontrolleri sorunları karar vericilere ulaşmadan yakalar. Katalog ve metadata sayesinde analistler ve mühendisler veri kümelerini keşfedebilir, anlayabilir ve güvenle yeniden kullanabilir.",
+        "BI panolarından ileri analitiğe ve modele hazır özelliklere kadar ham veriden içgörüye uzanan tutarlı bir yol oluşturuyoruz. Erişim kontrolleri ile satır/sütun düzeyinde politikalar hassas veriyi korur; maliyet yönetişimi bulut harcamalarını şeffaf ve öngörülebilir kılar. Hatlar boyunca gözlemlenebilirlik; kayma, tazelik ve anomali sinyallerini yüzeye çıkarır,paydaşlar rakamlara güvenebilir, ekibiniz güvenle iterasyon yapabilir."
+      ]
+    },
+    {
+      "title": "Bulut, DevOps ve Güvenlik",
+      "subtitle": "CI/CD ve uyumlulukla güçlendirilmiş altyapı",
+      "image": "/solutions/3.webp",
+      "paragraphs": [
+        "Tekrarlanabilir teslim, güçlü izolasyon ve birinci sınıf gözlemlenebilirlikle bulut-yerel yığınlar tasarlıyoruz. CI/CD hatları derleme, test ve dağıtımı kanary ve blue-green stratejileriyle otomatikleştirir; kod olarak altyapı ise ortamları yeniden üretilebilir ve denetlenebilir kılar. Merkezi loglama, metrik ve izleme ortak operasyonel görünüm sunar; MTTR’yi düşürür ve proaktif kapasite planlamasını mümkün kılar. Sıfır kesinti ve kontrollü geri dönüşler için tasarlarız.",
+        "Güvenlik uçtan uca gömülüdür: temel sertleştirme, sır yönetimi, en az ayrıcalıklı IAM ve sürekli duruş değerlendirmesi. Ağ segmentasyonu, WAF ve hız sınırlamaları ile bölgeler arası tutarlı uyumluluk için politika-olarak-kod uygularız. Gerektiğinde özel ağ, veri yerelliği ve kurumsal denetimler için gereklilikleri karşılarız. Sonuç; ürününüzle ölçeklenen ve müşteriler, denetçiler ve SRE ekibinizin incelemesine hazır bir altyapıdır."
+      ]
+    }
+  ]
+}
