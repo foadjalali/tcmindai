@@ -78,7 +78,7 @@ export default async function SolutionsPage({
 
             <div className="mt-8 md:mt-50 mx-auto" data-aos="fade-up">
               <ScrollImage
-                heightClass="h-[26rem] md:h-[34rem]"
+                heightClass="h-[40rem] md:h-[34rem]"
                 titleComponent={null}
                 src={s.image}
                 alt={s.title}

@@ -44,24 +44,21 @@ export default function FeatureBlock({
   const textFirst = !reverse
   const isRTL = dir === "rtl"
 
-  // ستون سمتِ چپ و راست از نظر بصری (روی دسکتاپ)
   const leftColIsText = textFirst
   const rightColIsText = !textFirst
 
-  // جهت انیمیشن براساس LTR/RTL
-  const fromLeft  = isRTL ? "fade-right" : "fade-left"
-  const fromRight = isRTL ? "fade-left"  : "fade-right"
+  const fromLeft = isRTL ? "fade-right" : "fade-left"
+  const fromRight = isRTL ? "fade-left" : "fade-right"
 
   return (
     <section
       dir={dir}
       className={cn(
-        "w-full py-10 md:py-16",
+        "w-full py-10 md:py-16 overflow-x-hidden", // 👈 اینو اضافه کن
         sectionBg,
         sectionText,
         className
       )}
-      // یک انیمیشن نرم برای ورود سکشن (دلخواه)
       data-aos="fade-up"
       data-aos-once="true"
       data-aos-mirror="false"
@@ -75,10 +72,8 @@ export default function FeatureBlock({
             "lg:grid-cols-2"
           )}
         >
-          {/* ستون متن */}
           <div
             className={cn(textFirst ? "order-1" : "order-2")}
-            // اگر این ستون «سمت چپ» است، از سمت چپ بیاید؛ اگر سمت راست است، از راست
             data-aos={leftColIsText ? fromLeft : fromRight}
             data-aos-once="true"
             data-aos-mirror="false"
@@ -110,10 +105,8 @@ export default function FeatureBlock({
             </div>
           </div>
 
-          {/* ستون تصویر */}
           <div
             className={cn(textFirst ? "order-2" : "order-1")}
-            // برعکسِ ستون متن
             data-aos={leftColIsText ? fromRight : fromLeft}
             data-aos-once="true"
             data-aos-mirror="false"
@@ -137,3 +130,4 @@ export default function FeatureBlock({
     </section>
   )
 }
+
