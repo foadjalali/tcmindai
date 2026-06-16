@@ -29,10 +29,9 @@ async function loadSEO(): Promise<SEOJSON> {
 }
 
 /**
- * خواندن بسته متا برای صفحه‌ای مشخص و ساخت Metadata کامل Next.js
- * @param pageKey کلید صفحه در JSON (مثلاً "blog")
- * @param locale  زبان مسیر داینامیک
- * @param routePath مسیر نسبی صفحه با locale، مثل `/${locale}/blog`
+ * @param pageKey
+ * @param locale
+ * @param routePath
  */
 export async function makePageMetadata(
   pageKey: PageKey,

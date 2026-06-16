@@ -30,12 +30,11 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // دسته‌های محصولات
   const productCategories = [
     { href: "/products", label: t("allProducts") },
-    { href: "/products/software", label: t("software") },
-    { href: "/products/hardware", label: t("hardware") },
-    { href: "/products/services", label: t("services") },
+    { href: "/#", label: t("software") },
+    { href: "/#", label: t("hardware") },
+    { href: "/#", label: t("services") },
   ]
 
   const navItems: NavItem[] = [
