@@ -7,7 +7,7 @@
       "text": "At TechnomindAI, you get scalable, secure AI solutions that deliver measurable improvements in your business results. We help you increase efficiency, cut costs, and speed up decision-making by supporting AI automation, software development, and infrastructure modernization. Our expertise ensures your operations run seamlessly now and prepares your business for continued digital growth.",
       "button": {
         "label": "Get Started",
-        "href": "/contact-us"
+        "href": "/contact"
       },
       "image": {
         "src": "/home/1.webp",
@@ -21,7 +21,7 @@
       "text": "Every industry faces distinct obstacles, and TechnomindAI tailors solutions to resolve your unique challenges. We partner with fintech, healthcare, logistics, retail, and enterprise clients to deliver results through AI integration, data intelligence, and custom software. You benefit from our technical expertise and strategic insight, achieving strong ROI and resilient long-term operations.",
       "button": {
         "label": "Security & Privacy",
-        "href": "/security"
+        "href": "/solutions"
       },
       "image": {
         "src": "/home/2.webp",
