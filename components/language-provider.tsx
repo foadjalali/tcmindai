@@ -330,22 +330,28 @@ function replaceLocaleInPath(path: string, next: Language) {
 /* -----------------------------
       Provider & hook
 ----------------------------- */
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
+export function LanguageProvider({
+  children,
+  initialLocale = "en",
+}: {
+  children: React.ReactNode
+  initialLocale?: Language
+}) {
   const router = useRouter()
   const pathname = usePathname() || "/"
-  const [language, setLanguageState] = useState<Language>("en")
+  const [language, setLanguageState] = useState<Language>(initialLocale)
 
   // همگام‌سازی با URL (segment اول)
   useEffect(() => {
     const seg = pathname.split("/")[1]
     const urlLang = isLang(seg) ? (seg as Language) : null
     const saved = (typeof window !== "undefined" && localStorage.getItem("language")) as Language | null
-    const lang: Language = urlLang ?? (isLang(saved) ? saved : "en")
+    const lang: Language = urlLang ?? (isLang(saved) ? saved : initialLocale)
 
     setLanguageState(lang)
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr"
     document.documentElement.lang = lang
-  }, [pathname])
+  }, [initialLocale, pathname])
 
   // تغییر زبان: URL + state + کوکی + localStorage
   const handleSetLanguage = (lang: Language) => {

@@ -57,10 +57,10 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href={`/${language}`} className="flex items-center">
             <img
-              src="/tcmindai.png"
-              alt="InovativAI — Intelligent Solutions"
+              src="/tclogo.svg"
+              alt="TechnomindAI — Intelligent Solutions"
               className="h-10 md:h-12 w-auto"
-              style={{ height: '2rem' }}
+              style={{ height: '5rem' }}
             />
           </Link>
 

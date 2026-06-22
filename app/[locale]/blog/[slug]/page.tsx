@@ -28,13 +28,45 @@ function getPost(slug: string) {
   return arr.find((p) => p.slug === slug);
 }
 function estimateReadingTime(text: string) {
-  const words = text.trim().split(/\s+/).length;
+  const words = text.replace(/<[^>]*>/g, " ").trim().split(/\s+/).length;
   return Math.max(1, Math.ceil(words / 200));
 }
 function fmtDate(iso: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale, { year: "numeric", month: "long", day: "2-digit" }).format(
     new Date(iso)
   );
+}
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+function hasHtml(value: string) {
+  return /<\/?[a-z][\s\S]*>/i.test(value);
+}
+function plainTextToHtml(value: string) {
+  return value
+    .trim()
+    .split(/\n{2,}/)
+    .map((block) => {
+      const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
+      const isList = lines.length > 0 && lines.every((line) => line.startsWith("- "));
+
+      if (isList) {
+        return `<ul>${lines
+          .map((line) => `<li>${escapeHtml(line.slice(2).trim())}</li>`)
+          .join("")}</ul>`;
+      }
+
+      return `<p>${escapeHtml(block.trim()).replace(/\n/g, "<br />")}</p>`;
+    })
+    .join("");
+}
+function toArticleHtml(value: string) {
+  return hasHtml(value) ? value : plainTextToHtml(value);
 }
 
 export async function generateMetadata({
@@ -92,6 +124,7 @@ export default async function BlogPostPage({
     post.readingTimeMinutes ?? estimateReadingTime(`${tr.excerpt}\n\n${tr.description}`);
   const dateLabel = fmtDate(post.publishedAt, locale);
   const coverAlt = post.coverImage.alt?.[locale] ?? tr.title;
+  const articleHtml = toArticleHtml(tr.description);
 
   return (
     <article className="bg-background text-foreground">
@@ -158,10 +191,11 @@ export default async function BlogPostPage({
 
       <section className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl">
-          <div className="prose prose-zinc dark:prose-invert max-w-none prose-a:text-primary">
-            <div className="py-10 md:py-12 whitespace-pre-wrap leading-8">
-              {tr.description}
-            </div>
+          <div className="blog-article-content">
+            <div
+              className="py-10 md:py-12 leading-8"
+              dangerouslySetInnerHTML={{ __html: articleHtml }}
+            />
           </div>
         </div>
       </section>

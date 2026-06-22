@@ -29,10 +29,10 @@ export function Footer() {
           <div>
             <Link href={`/${language}`} className="flex items-center">
               <img
-                src="/tcmindai.png"
-                alt="InovativAI — Intelligent Solutions"
+                src="/tclogo.svg"
+                alt="TechnomindAI — Intelligent Solutions"
                 className="h-10 md:h-12 w-auto"
-                style={{ height: '2rem' }}
+                style={{ height: '5rem' }}
               />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">{t("heroSubtitle")}</p>
@@ -67,17 +67,8 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-foreground">Follow Us</h4>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/company/technomind-ai/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>

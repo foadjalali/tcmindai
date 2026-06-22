@@ -12,6 +12,7 @@ import JourneyDemo from "@/components/roadmap/roadmap"
 import { makePageMetadata } from "@/lib/seo"
 
 type Locale = "en" | "ar" | "tr"
+const LOCALES: readonly Locale[] = ["en", "ar", "tr"] as const
 
 type Section = {
   id: string
@@ -82,8 +83,8 @@ export default async function HomePage({
   params: Promise<{ locale: Locale }>
 }) {
   const { locale } = await params
-  const lang: Locale = (["en", "ar", "tr"] as const).includes(locale) ? locale : "en"
-  const tr = ctaHomeI18n[locale]
+  const lang: Locale = (LOCALES as readonly string[]).includes(locale) ? locale : "en"
+  const tr = ctaHomeI18n[lang]
   const data = (sections as Record<Locale, Section[]>)[lang] ?? (sections as any).en
   const dir = lang === "ar" ? "rtl" : "ltr"
 
@@ -119,9 +120,9 @@ export default async function HomePage({
         title={tr.title}
         description={tr.desc}
         primaryLabel={tr.primary}
-        primaryHref={`/${locale}/contact`}
+        primaryHref={`/${lang}/contact`}
         secondaryLabel={tr.secondary}
-        secondaryHref={`/${locale}/solutions`}
+        secondaryHref={`/${lang}/solutions`}
       />
     </div>
   )

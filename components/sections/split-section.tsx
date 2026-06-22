@@ -42,16 +42,17 @@ export function SplitSection({
   }, [])
 
   return (
-    <section ref={ref} className={clsx("py-16 md:py-20 bg-background", className)}>
+    <section ref={ref} className={clsx("bg-background", className)}>
       <div
         className={clsx(
-          "container mx-auto px-4 grid items-center gap-10 md:grid-cols-2",
+          "mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2 md:gap-14 lg:gap-20",
           reverse ? "md:[&>*:first-child]:order-2 md:[&>*:last-child]:order-1" : ""
         )}
       >
         <div className={clsx(
-          "relative w-full overflow-hidden rounded-2xl ring-1 ring-border/50 min-h-[260px] md:min-h-[360px]",
-          "transition-all duration-700",
+          "relative w-full overflow-hidden rounded-[1.75rem] ring-1 ring-border/50",
+          "aspect-[1.08/1] sm:aspect-[4/3] md:aspect-[1.18/1] lg:aspect-[1.28/1]",
+          "bg-muted shadow-2xl shadow-primary/5 transition-all duration-700",
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
         )}>
           <Image
@@ -65,7 +66,8 @@ export function SplitSection({
         </div>
 
         <div className={clsx(
-          "transition-all duration-700",
+          "max-w-xl md:px-2 lg:px-0 transition-all duration-700",
+          reverse ? "md:justify-self-start" : "md:justify-self-end",
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
         )}>
           {eyebrow && (
@@ -73,8 +75,8 @@ export function SplitSection({
               {eyebrow}
             </div>
           )}
-          <h2 className="text-2xl md:text-3xl font-bold text-balance">{title}</h2>
-          <p className="mt-3 text-muted-foreground leading-relaxed">{description}</p>
+          <h2 className="text-2xl md:text-4xl font-bold leading-tight text-balance">{title}</h2>
+          <p className="mt-5 text-base leading-8 text-muted-foreground md:text-lg">{description}</p>
 
           {children && <div className="mt-6">{children}</div>}
         </div>

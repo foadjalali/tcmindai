@@ -33,6 +33,9 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
             phone: "Phone (optional)",
             message: "Your message",
             submit: "Send",
+            sending: "Sending...",
+            success: "Thanks. Your message has been sent.",
+            error: "We could not send your message. Please try again.",
         },
         ar: {
             sendMessage: "أرسل رسالة",
@@ -51,6 +54,9 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
             phone: "الهاتف (اختياري)",
             message: "رسالتك",
             submit: "إرسال",
+            sending: "جارٍ الإرسال...",
+            success: "شكراً لك. تم إرسال رسالتك.",
+            error: "تعذر إرسال رسالتك. يرجى المحاولة مرة أخرى.",
         },
         tr: {
             sendMessage: "Mesaj Gönder",
@@ -69,33 +75,59 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
             phone: "Telefon (opsiyonel)",
             message: "Mesajınız",
             submit: "Gönder",
+            sending: "Gönderiliyor...",
+            success: "Teşekkürler. Mesajınız gönderildi.",
+            error: "Mesajınız gönderilemedi. Lütfen tekrar deneyin.",
         },
     }[locale]
 
     const [asCompany, setAsCompany] = React.useState(false)
     const [subject, setSubject] = React.useState<string | undefined>("AI Consulting")
     const [customSubject, setCustomSubject] = React.useState("")
+    const [isSubmitting, setIsSubmitting] = React.useState(false)
+    const [status, setStatus] = React.useState<"idle" | "success" | "error">("idle")
 
     async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
+        setIsSubmitting(true)
+        setStatus("idle")
+
         const fd = new FormData(e.currentTarget)
+        const form = e.currentTarget
         const payload = {
-            locale,
-            asCompany,
-            name: fd.get("name"),
-            email: fd.get("email"),
-            phone: fd.get("phone"),
+            contactType: asCompany ? "company" : "individual",
+            name: fd.get("name")?.toString() ?? "",
+            email: fd.get("email")?.toString() ?? "",
+            phone: fd.get("phone")?.toString() ?? "",
             subject: subject === t.other ? customSubject : subject,
-            company: asCompany ? {
-                name: fd.get("companyName"),
-                website: fd.get("companyWebsite"),
-                size: fd.get("companySize"),
-            } : null,
-            message: fd.get("message"),
+            message: fd.get("message")?.toString() ?? "",
         }
-        console.log("[CONTACT FORM]", payload)
-        e.currentTarget.reset()
-        setCustomSubject("")
+
+        try {
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+            })
+
+            if (!response.ok) {
+                setStatus("error")
+                return
+            }
+
+            form.reset()
+            setCustomSubject("")
+            setSubject("AI Consulting")
+            setAsCompany(false)
+            setStatus("success")
+        } catch (error) {
+            console.error("[CONTACT FORM] Failed to submit", error)
+            setStatus("error")
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     return (
@@ -129,26 +161,6 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
                         </button>
                     </div>
                 </div>
-
-                {asCompany && (
-                    <>
-                        <div className="border-t border-border/50" />
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-5" data-aos="fade-up" data-aos-delay="100">
-                            <div>
-                                <Label htmlFor="companyName" className="mb-1.5 block">{t.companyName}</Label>
-                                <Input id="companyName" name="companyName" placeholder="Acme Inc." required />
-                            </div>
-                            <div>
-                                <Label htmlFor="companyWebsite" className="mb-1.5 block">{t.companyWebsite}</Label>
-                                <Input id="companyWebsite" name="companyWebsite" placeholder="https://acme.com" />
-                            </div>
-                            <div>
-                                <Label htmlFor="companySize" className="mb-1.5 block">{t.companySize}</Label>
-                                <Input id="companySize" name="companySize" placeholder="50-100" />
-                            </div>
-                        </div>
-                    </>
-                )}
 
                 <div className="border-t border-border/50" />
 
@@ -199,8 +211,14 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
                     <Textarea id="message" name="message" className="min-h-[160px]" required />
                 </div>
 
-                <Button type="submit" className="w-full md:w-auto" data-aos="fade-up" data-aos-delay="300">
-                    {t.submit}
+                {status !== "idle" && (
+                    <p className={status === "success" ? "text-sm text-green-600" : "text-sm text-destructive"}>
+                        {status === "success" ? t.success : t.error}
+                    </p>
+                )}
+
+                <Button type="submit" className="w-full md:w-auto" disabled={isSubmitting} data-aos="fade-up" data-aos-delay="300">
+                    {isSubmitting ? t.sending : t.submit}
                 </Button>
             </form>
         </div>
