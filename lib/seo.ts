@@ -1,10 +1,10 @@
 import { promises as fs } from "fs";
 import path from "path";
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site-url";
 
 export type Locale = "en" | "ar" | "tr";
 const LOCALES: readonly Locale[] = ["en", "ar", "tr"] as const;
-const SITE_URL = "https://technomindai.com";
 
 type PageKey =
   | "home" | "about" | "blog" | "career" | "contact" | "faq" | "solution";
@@ -56,8 +56,9 @@ export async function makePageMetadata(
 
   // build alternates for all locales from same pageKey
   const langs = data[pageKey];
+  const routeSegment = pageKey === "solution" ? "solutions" : pageKey;
   const alternatesLanguages = Object.fromEntries(
-    (LOCALES as readonly Locale[]).map(l => [l, `${SITE_URL}/${l}/${pageKey === "home" ? "" : pageKey}`.replace(/\/$/, "")])
+    (LOCALES as readonly Locale[]).map(l => [l, `${SITE_URL}/${l}/${pageKey === "home" ? "" : routeSegment}`.replace(/\/$/, "")])
   ) as Record<string, string>;
 
   return {

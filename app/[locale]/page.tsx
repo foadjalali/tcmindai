@@ -23,8 +23,6 @@ type Section = {
   image: { src: string; alt: string }
 }
 
-const SITE_URL = "http://localhost:3000"
-
 const metaI18n: Record<Locale, { title: string; description: string }> = {
   en: {
     title: "Transform Your Business with Innovation",

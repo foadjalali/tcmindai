@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import postsData from "@/db/blog/posts.json";
+import { SITE_URL } from "@/lib/site-url";
 
 type Locale = "en" | "ar" | "tr";
 type PostJSON = {
@@ -19,9 +20,6 @@ type PostJSON = {
   tags: string[];
   translations: Record<Locale, { title: string; excerpt: string; description: string }>;
 };
-
-const SITE_URL =
-  (process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "") || "https://example.com") as string;
 
 function getPost(slug: string) {
   const arr = postsData as PostJSON[];
