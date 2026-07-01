@@ -22,7 +22,6 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const { language, setLanguage, t } = useLanguage()
-  const href = `/${language}`
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20)
@@ -31,7 +30,6 @@ export function Header() {
   }, [])
 
   const productCategories = [
-    { href: "/products", label: t("allProducts") },
     { href: "/#", label: t("software") },
     { href: "/#", label: t("hardware") },
     { href: "/#", label: t("services") },
@@ -105,13 +103,19 @@ export function Header() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 <DropdownMenuItem onClick={() => setLanguage("en")}>
-                  English {language === "en" && "✓"}
+                  <span className="me-2" aria-hidden="true">🇬🇧</span>
+                  <span className="flex-1">English</span>
+                  {language === "en" && <span className="ms-3">✓</span>}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setLanguage("ar")}>
-                  العربية {language === "ar" && "✓"}
+                  <span className="me-2" aria-hidden="true">🇸🇦</span>
+                  <span className="flex-1">العربية</span>
+                  {language === "ar" && <span className="ms-3">✓</span>}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setLanguage("tr")}>
-                  Türkçe {language === "tr" && "✓"}
+                  <span className="me-2" aria-hidden="true">🇹🇷</span>
+                  <span className="flex-1">Türkçe</span>
+                  {language === "tr" && <span className="ms-3">✓</span>}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

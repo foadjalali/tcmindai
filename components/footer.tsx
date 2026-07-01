@@ -2,11 +2,10 @@
 
 import Link from "next/link"
 import { useLanguage } from "@/components/language-provider"
-import { Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { Linkedin, Mail, MapPin, MessageCircle, Phone } from "lucide-react"
 
 export function Footer() {
-  const { language, setLanguage, t } = useLanguage()
-  const href = `/${language}`
+  const { language, t } = useLanguage()
 
   const quickLinks = [
     { href: "/", label: t("home") },
@@ -103,6 +102,17 @@ export function Footer() {
                 >
                   <Phone className="h-4 w-4 shrink-0 mt-0.5" />
                   <span>+447747984494</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://wa.me/447747984494"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <MessageCircle className="h-4 w-4 shrink-0 mt-0.5" />
+                  <span>WhatsApp: +447747984494</span>
                 </a>
               </li>
             </ul>

@@ -36,7 +36,7 @@ export default function JobCard({
         AOS.init({ duration: 600, once: true, offset: 36, easing: "ease-out-cubic" })
     }, [])
 
-    const mail = job.email || "careers@company.com"
+    const mail = "info@technomindai.com"
     const subject = encodeURIComponent(`[${job.title}] Application`)
     const body = encodeURIComponent(`Hello,\n\nI would like to apply for "${job.title}".\n\nRegards,\n`)
     const mailtoHref = `mailto:${mail}?subject=${subject}&body=${body}`

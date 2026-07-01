@@ -30,6 +30,8 @@ const dict = {
         success: "Thanks! We received your question.",
         error: "Something went wrong. Please try again.",
         placeholderQ: "Briefly describe your question...",
+        required: "This field is required.",
+        invalidEmail: "Enter a valid email address.",
     },
     ar: {
         title: "لم تجد سؤالك؟",
@@ -43,6 +45,8 @@ const dict = {
         success: "شكراً! استلمنا سؤالك.",
         error: "حدث خطأ. حاول مرة أخرى.",
         placeholderQ: "صف سؤالك باختصار...",
+        required: "هذا الحقل مطلوب.",
+        invalidEmail: "أدخل بريداً إلكترونياً صحيحاً.",
     },
     tr: {
         title: "Sorunuz listede yok mu?",
@@ -56,6 +60,8 @@ const dict = {
         success: "Teşekkürler! Sorunuzu aldık.",
         error: "Bir hata oluştu. Lütfen tekrar deneyin.",
         placeholderQ: "Sorunuzu kısaca açıklayın...",
+        required: "Bu alan zorunludur.",
+        invalidEmail: "Geçerli bir e-posta adresi girin.",
     },
 }
 
@@ -71,19 +77,42 @@ export default function AskQuestionSection({
     const [ok, setOk] = React.useState<string | null>(null)
     const [err, setErr] = React.useState<string | null>(null)
     const [cat, setCat] = React.useState<string | undefined>(categories[0])
+    const [errors, setErrors] = React.useState<Record<string, string>>({})
+
+    function fieldClass(name: string) {
+        return errors[name] ? "border-destructive focus-visible:ring-destructive/30" : ""
+    }
+
+    function FieldError({ name }: { name: string }) {
+        if (!errors[name]) return null
+        return <p className="mt-1.5 text-sm text-destructive">{errors[name]}</p>
+    }
 
     async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
-        setOk(null); setErr(null); setLoading(true)
+        setOk(null); setErr(null)
 
         const fd = new FormData(e.currentTarget)
-        if ((fd.get("company") as string)?.length) { setLoading(false); return }
+        if ((fd.get("company") as string)?.length) return
+
+        const email = (fd.get("email") as string)?.trim()
+        const question = (fd.get("question") as string)?.trim()
+        const nextErrors: Record<string, string> = {}
+
+        if (!email) nextErrors.email = t.required
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) nextErrors.email = t.invalidEmail
+        if (!question) nextErrors.question = t.required
+
+        setErrors(nextErrors)
+        if (Object.keys(nextErrors).length > 0) return
+
+        setLoading(true)
 
         const payload = {
             name: fd.get("name") as string,
-            email: (fd.get("email") as string)?.trim(),
+            email,
             category: cat,
-            question: (fd.get("question") as string)?.trim(),
+            question,
             consent: fd.get("consent") === "on",
             locale,
         }
@@ -96,6 +125,7 @@ export default function AskQuestionSection({
             })
             if (!res.ok) throw new Error(await res.text())
             setOk(t.success)
+            setErrors({})
             e.currentTarget.reset()
         } catch {
             setErr(t.error)
@@ -133,7 +163,8 @@ export default function AskQuestionSection({
                             </div>
                             <div>
                                 <Label htmlFor="email" className="mb-1.5 block">{t.email}</Label>
-                                <Input id="email" name="email" type="email" required placeholder="you@example.com" />
+                                <Input id="email" name="email" type="email" placeholder="you@example.com" className={fieldClass("email")} aria-invalid={!!errors.email} />
+                                <FieldError name="email" />
                             </div>
                         </div>
 
@@ -155,7 +186,14 @@ export default function AskQuestionSection({
 
                         <div>
                             <Label htmlFor="question" className="mb-1.5 block">{t.yourQuestion}</Label>
-                            <Textarea id="question" name="question" required placeholder={t.placeholderQ} className="min-h-[120px]" />
+                            <Textarea
+                                id="question"
+                                name="question"
+                                placeholder={t.placeholderQ}
+                                className={`min-h-[120px] ${fieldClass("question")}`}
+                                aria-invalid={!!errors.question}
+                            />
+                            <FieldError name="question" />
                         </div>
 
                         <div className="flex items-start gap-2">

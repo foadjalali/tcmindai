@@ -36,6 +36,8 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
             sending: "Sending...",
             success: "Thanks. Your message has been sent.",
             error: "We could not send your message. Please try again.",
+            required: "This field is required.",
+            invalidEmail: "Enter a valid email address.",
         },
         ar: {
             sendMessage: "أرسل رسالة",
@@ -57,6 +59,8 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
             sending: "جارٍ الإرسال...",
             success: "شكراً لك. تم إرسال رسالتك.",
             error: "تعذر إرسال رسالتك. يرجى المحاولة مرة أخرى.",
+            required: "هذا الحقل مطلوب.",
+            invalidEmail: "أدخل بريداً إلكترونياً صحيحاً.",
         },
         tr: {
             sendMessage: "Mesaj Gönder",
@@ -78,6 +82,8 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
             sending: "Gönderiliyor...",
             success: "Teşekkürler. Mesajınız gönderildi.",
             error: "Mesajınız gönderilemedi. Lütfen tekrar deneyin.",
+            required: "Bu alan zorunludur.",
+            invalidEmail: "Geçerli bir e-posta adresi girin.",
         },
     }[locale]
 
@@ -86,21 +92,46 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
     const [customSubject, setCustomSubject] = React.useState("")
     const [isSubmitting, setIsSubmitting] = React.useState(false)
     const [status, setStatus] = React.useState<"idle" | "success" | "error">("idle")
+    const [errors, setErrors] = React.useState<Record<string, string>>({})
+
+    function fieldClass(name: string) {
+        return errors[name] ? "border-destructive focus-visible:ring-destructive/30" : ""
+    }
+
+    function FieldError({ name }: { name: string }) {
+        if (!errors[name]) return null
+        return <p className="mt-1.5 text-sm text-destructive">{errors[name]}</p>
+    }
 
     async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
-        setIsSubmitting(true)
         setStatus("idle")
 
         const fd = new FormData(e.currentTarget)
         const form = e.currentTarget
+        const name = fd.get("name")?.toString().trim() ?? ""
+        const email = fd.get("email")?.toString().trim() ?? ""
+        const message = fd.get("message")?.toString().trim() ?? ""
+        const selectedSubject = subject === t.other ? customSubject.trim() : subject
+        const nextErrors: Record<string, string> = {}
+
+        if (!name) nextErrors.name = t.required
+        if (!email) nextErrors.email = t.required
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) nextErrors.email = t.invalidEmail
+        if (subject === t.other && !customSubject.trim()) nextErrors.customSubject = t.required
+        if (!message) nextErrors.message = t.required
+
+        setErrors(nextErrors)
+        if (Object.keys(nextErrors).length > 0) return
+
+        setIsSubmitting(true)
         const payload = {
             contactType: asCompany ? "company" : "individual",
-            name: fd.get("name")?.toString() ?? "",
-            email: fd.get("email")?.toString() ?? "",
+            name,
+            email,
             phone: fd.get("phone")?.toString() ?? "",
-            subject: subject === t.other ? customSubject : subject,
-            message: fd.get("message")?.toString() ?? "",
+            subject: selectedSubject,
+            message,
         }
 
         try {
@@ -121,6 +152,7 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
             setCustomSubject("")
             setSubject("AI Consulting")
             setAsCompany(false)
+            setErrors({})
             setStatus("success")
         } catch (error) {
             console.error("[CONTACT FORM] Failed to submit", error)
@@ -168,11 +200,13 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5" data-aos="fade-up" data-aos-delay="150">
                     <div>
                         <Label htmlFor="name" className="mb-1.5 block">{t.name}</Label>
-                        <Input id="name" name="name" placeholder="John Doe" required />
+                        <Input id="name" name="name" placeholder="John Doe" className={fieldClass("name")} aria-invalid={!!errors.name} />
+                        <FieldError name="name" />
                     </div>
                     <div>
                         <Label htmlFor="email" className="mb-1.5 block">{t.email}</Label>
-                        <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+                        <Input id="email" name="email" type="email" placeholder="you@example.com" className={fieldClass("email")} aria-invalid={!!errors.email} />
+                        <FieldError name="email" />
                     </div>
                     <div>
                         <Label htmlFor="phone" className="mb-1.5 block">{t.phone}</Label>
@@ -198,7 +232,14 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
                     {subject === t.other && (
                         <div>
                             <Label htmlFor="customSubject" className="mb-1.5 block">{t.customSubject}</Label>
-                            <Input id="customSubject" value={customSubject} onChange={(e) => setCustomSubject(e.target.value)} required />
+                            <Input
+                                id="customSubject"
+                                value={customSubject}
+                                onChange={(e) => setCustomSubject(e.target.value)}
+                                className={fieldClass("customSubject")}
+                                aria-invalid={!!errors.customSubject}
+                            />
+                            <FieldError name="customSubject" />
                         </div>
                     )}
                 </div>
@@ -208,7 +249,8 @@ export default function ContactForm({ locale }: { locale: "en" | "ar" | "tr" }) 
                 {/* پیام */}
                 <div data-aos="fade-up" data-aos-delay="250">
                     <Label htmlFor="message" className="mb-1.5 block">{t.message}</Label>
-                    <Textarea id="message" name="message" className="min-h-[160px]" required />
+                    <Textarea id="message" name="message" className={`min-h-[160px] ${fieldClass("message")}`} aria-invalid={!!errors.message} />
+                    <FieldError name="message" />
                 </div>
 
                 {status !== "idle" && (

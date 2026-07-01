@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
@@ -9,6 +10,8 @@ type HeroSectionProps = {
   subtitle: string
   primaryButtonText: string
   secondaryButtonText?: string
+  primaryHref?: string
+  secondaryHref?: string
   onPrimaryClick?: () => void
   onSecondaryClick?: () => void
 }
@@ -18,6 +21,8 @@ export function HeroSection({
   subtitle,
   primaryButtonText,
   secondaryButtonText,
+  primaryHref,
+  secondaryHref,
   onPrimaryClick,
   onSecondaryClick,
 }: HeroSectionProps) {
@@ -44,14 +49,29 @@ export function HeroSection({
             {subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="text-base group cta-theme-bt bg-cta-btn-bg text-cta-btn-fg" onClick={onPrimaryClick}>
-              {primaryButtonText}
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform " />
-            </Button>
-            {secondaryButtonText && (
-              <Button size="lg" variant="outline" className="text-base bg-transparent" onClick={onSecondaryClick}>
-                {secondaryButtonText}
+            {primaryHref ? (
+              <Button size="lg" className="text-base group cta-theme-bt bg-cta-btn-bg text-cta-btn-fg" asChild>
+                <Link href={primaryHref}>
+                  {primaryButtonText}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform " />
+                </Link>
               </Button>
+            ) : (
+              <Button size="lg" className="text-base group cta-theme-bt bg-cta-btn-bg text-cta-btn-fg" onClick={onPrimaryClick}>
+                {primaryButtonText}
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform " />
+              </Button>
+            )}
+            {secondaryButtonText && (
+              secondaryHref ? (
+                <Button size="lg" variant="outline" className="text-base bg-transparent" asChild>
+                  <Link href={secondaryHref}>{secondaryButtonText}</Link>
+                </Button>
+              ) : (
+                <Button size="lg" variant="outline" className="text-base bg-transparent" onClick={onSecondaryClick}>
+                  {secondaryButtonText}
+                </Button>
+              )
             )}
           </div>
         </div>

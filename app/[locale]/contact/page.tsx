@@ -98,7 +98,12 @@ export default async function ContactPage({
                       <h3 className="font-semibold mb-1">
                         {{ en: "Email", ar: "البريد الإلكتروني", tr: "E-posta" }[lang]}
                       </h3>
-                      <p className="text-muted-foreground">info@technomindai.com</p>
+                      <a
+                        href="mailto:info@technomindai.com"
+                        className="text-muted-foreground transition-colors hover:text-primary"
+                      >
+                        info@technomindai.com
+                      </a>
                     </div>
                   </div>
 
@@ -113,9 +118,14 @@ export default async function ContactPage({
                       <h3 className="font-semibold mb-1">
                         {{ en: "Address", ar: "العنوان", tr: "Adres" }[lang]}
                       </h3>
-                      <p className="text-muted-foreground">
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=Frederick%20Street%2C%20London%2C%20England%2C%20WC1X%200ND"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground transition-colors hover:text-primary"
+                      >
                         Frederick Street, London, England, WC1X 0ND
-                      </p>
+                      </a>
                     </div>
                   </div>
 
@@ -134,6 +144,25 @@ export default async function ContactPage({
                         className="text-muted-foreground transition-colors hover:text-primary"
                       >
                         +447747984494
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 rounded-lg bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-1">WhatsApp</h3>
+                      <a
+                        href="http://wa.me/447747984494"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground transition-colors hover:text-primary"
+                      >
+                        WhatsApp: +447747984494
                       </a>
                     </div>
                   </div>
